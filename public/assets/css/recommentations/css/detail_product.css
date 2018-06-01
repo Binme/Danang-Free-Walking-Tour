@@ -1,0 +1,71 @@
+
+/* Start new style */
+.clear-fix {
+	clear: both;
+}
+
+.style_detail_food{
+	color: #e7a707;
+}
+.wallper,
+.intro_product {
+	width: 50%;
+	float: left;
+	height: 300px;
+}
+.wrap_image_detail{
+	width: 50%;
+	margin-top: 5%;
+	float: left;
+}
+
+.wrap_image_detail .wrap_video {
+
+	margin: 5px 20px 0 50px;
+	width:500px;
+	height: 400px;
+
+
+}
+
+.wrap_image_detail img{
+	width: 260px;
+	height: 180px;
+	float: left;
+	margin: 10px 0 20px 40px;
+	visibility: visible;
+}
+
+.wallper .wallper-image {
+	width: 100%;
+}
+
+
+.intro_product
+.detail_product{
+
+	float: left;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.intro_product .detail_product p{
+	font-family: "Time New Roman";
+	font-size: 20px;
+	color: #30408d;
+
+}
+
+.zoom {
+		display:inline-block;
+		position: relative;
+		}
+.zoom img {
+		display: block;
+		height: 300px;
+		/*margin: 20px;*/
+		padding: 30px 40px 0 40px;
+		}
+.zoom img::selection {
+ 	background-color: transparent;
+  }

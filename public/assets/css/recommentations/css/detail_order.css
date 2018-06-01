@@ -1,0 +1,212 @@
+header{
+  width: 100%;
+}
+body{
+   background: url("../image/bacgrout.jpg") !important;
+
+}
+.containerr{
+  width: 1200px;
+  margin: auto;
+  background-color: #fff;
+  
+}
+/*slide*/
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+.hiddenslide{
+  display: none;
+}
+/*chi Luyen*/
+.img-slide{
+  width: 1200px;
+  height: 300px;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.img{
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+/*Chi Luyen*/
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.hiddens_dot{
+  text-align:center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/*.active, .dot:hover {
+  background-color: #717171;
+}*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/*////////////////*/
+.btn-top {
+  -webkit-background-size: cover; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  border: medium none; 
+  bottom: 20px; 
+  cursor: pointer; 
+  display: none; 
+  height: 50px; 
+  outline: medium none; 
+  padding: 0; 
+  position: fixed; 
+  right: 20px; 
+  width: 50px; 
+  z-index: 9999; 
+}
+/*menu_header*/
+.menu_header ul {
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #183544;
+  
+}
+
+.menu_header ul li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #183544;
+}
+.menu_header li ul { display: none; }
+.menu_header ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  z-index: 540px;
+}
+
+.menu_header ul li a:hover { background: #2c3e50; }
+
+.menu_header li:hover > ul {
+  display: block;
+  position: absolute;
+}
+.menu_header li:hover li { float: none; }
+.menu_header li:hover a { background: #183544; }
+.menu_header li:hover li a:hover { background: #2c3e50; }
+.menu_header .main-navigation li ul li { border-top: 0; }
+.menu_header ul ul ul {
+  left: 100%;
+  top: 10px;
+}
+.menu_header ul:before,
+.menu_header ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+.menu_header ul:after { clear: both; }
+
+/*//////////////*/
+
+.search-box-contain{
+  float: right;
+  margin: 10px 20px 10px 0 ;
+
+}
+
+/*cell_serch*/
+.search-box-contain .serch_text{
+  height: 30px;
+  /*margin: 18px 0 0 700px;*/
+}
+/*///////////////*/
+
+
+/*
+imformation_restaurane*/
+.order{ 
+
+    font-family: 'Times New Roman';
+    background-color: #fff;
+    /*margin-top: 50px 0 50px 0;*/
+}
+.order:after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: visible;
+}
+.order h2{
+  padding: 40px;
+  text-align: center;
+  color: #30408d;
+}
+.order h3,
+.order h4 {
+  color: #30408d;
+}
+.order span {
+  color: red;
+}
+.order .detail_product_comment span{
+  font-size: 20px;
+  color: red;
+
+}
+.order .img_product,
+.order .imfor_order{
+  float: left;
+  width: 50%;
+  height: 400px;
+  box-sizing: border-box;
+  padding: 0 50px 30px 50px;
+  visibility: visible; 
+}
+.order .detail_product_comment {
+  margin: 0 50px 0 80px;
+  text-decoration: none;
+  font-family: "Time New Roman";
+}
+.order .detail_product_comment a {
+  text-decoration: none;
+  font-family: "Time New Roman";
+}
+
+
+
+
+
+
+
+
+
+
+

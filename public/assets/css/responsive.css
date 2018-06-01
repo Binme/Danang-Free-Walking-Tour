@@ -1,0 +1,447 @@
+@media (min-width: 1025px){
+  .mobile-responsive-appear{
+    display: none;
+  }
+  .desktop-responsive-mt100-up{
+    margin-top: -100px;
+  }
+  .desktop-responsive-mt15-up{
+    margin-top: -15px;
+  }
+  .desktop-responsive-mb100{
+    bottom: -100px!important;
+  }
+}
+@media (max-width: 1024px) {
+  .tp-leftarrow, .tp-rightarrow {
+    width: 40px !important;
+    height: 40px !important; }
+
+  .tp-leftarrow {
+    left: -15px !important; }
+
+  .tp-rightarrow {
+    left: 101% !important; }
+
+  .tparrows:before {
+    line-height: 25px !important; }
+
+  .image-content-list li {
+    margin-bottom: 30px; }
+    .image-content-list li:last-child {
+      margin-bottom: 0; }
+
+  .latest-news .news-meta {
+    top: 110px; }
+
+  .revenue-gallery li {
+    margin-right: 10px; 
+  } 
+  .mobile-responsive-apear{
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .portfolio-box.col-4 .portfolio-post {
+    width: 50%; }
+
+  .team-member {
+    margin-bottom: 30px; }
+
+  .pricing-box {
+    margin-bottom: 30px; }
+
+  .latest-news .news-details a {
+    float: left !important; }
+
+  .image-content-img {
+    display: none; }
+
+  .animated-counter,
+  .progress-chart-feature {
+    padding-bottom: 60px; }
+
+  .animated-counter-2 {
+    margin-bottom: 80px !important; }
+
+  .feature-5 {
+    margin-bottom: 30px; }
+
+  .block-number {
+    margin-bottom: 30px; }
+
+  .navbar {
+    min-height: 60px; }
+
+  .navbar-brand > img {
+    width: 140px;
+    height: auto; }
+
+  .navbar.navbar-default .navbar-nav > li > a {
+    padding: 10px 8px; }
+
+  .navbar-collapse.collapse {
+    margin-top: 10px;
+  }
+
+  .copyright-section .col-md-6 {
+    width: 50% !important;
+    display: inline-block; }
+    .copyright-section .col-md-6:last-child {
+      float: right; }
+
+  .testimonial-slide .carousel-inner .item {
+    padding-bottom: 80px; }
+
+  .testimonial-slide .carousel-indicators {
+    bottom: -20px; 
+  } 
+  .mobile-responsive-apear{
+    display: none;
+  }
+}
+@media (min-width: 768px){
+  .mobile-responsive-apear{
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .pad100 {
+    padding: 50px 0; }
+
+  .pad80 {
+    padding: 40px 0; }
+
+  .pad-t100 {
+    padding-top: 50px; }
+
+  .pad-b70 {
+    padding-bottom: 25px; }
+
+  .slide .carousel-inner .item{
+    height: 300px;
+  }
+    
+  .navbar-header {
+    text-align: center; }
+
+  .navbar-brand {
+    float: none; }
+    .navbar-brand > img {
+      width: 130px;
+      height: auto;
+      display: inline-block; }
+
+  .navbar {
+    min-height: 80px;
+    overflow: hidden;
+  }
+
+  .navbar-toggle {
+    margin-top: 15px; }
+
+  .image-content-img {
+    position: inherit !important;
+    width: 100% !important;
+    height: 300px !important; }
+
+  .image-content {
+    margin-top: 40px; }
+
+  .image-content-list li {
+    margin-bottom: 30px; }
+    .image-content-list li:last-child {
+      margin-bottom: 0; }
+
+  .team-member-style-1 .team-member-img img {
+    width: 100% !important; }
+
+  .palace-tab .nav-tabs > li.active:before {
+    border-width: 0; }
+
+  .palace-tab .tab-content .tab-pane img,
+  .palace-tab .tab-content .tab-pane span {
+    margin-bottom: 30px; }
+
+  .call-to-action-simple {
+    margin-bottom: 30px; }
+
+  .call-to-action-btn {
+    float: left !important; }
+
+  ul.filter {
+    margin-bottom: 30px; }
+
+  .portfolio-box.col-4 .portfolio-post {
+    width: 50%; }
+
+  .breadcrumb {
+    float: left; }
+
+  .copyright, .footer-nav {
+    text-align: center;
+    float: none; }
+
+  .copyright-section .col-md-6 {
+    width: 100% !important;
+    display: inline-block; }
+
+  .right-half, .left-half {
+    display: none; }
+
+  .testimonial-carousel-1 {
+    margin-bottom: 50px; }
+
+  .top-header .top-social {
+    text-align: center; }
+  .top-header .top-phone, .top-header .top-address {
+    display: none; }
+
+  .breadcrumb-section {
+    text-align: center; }
+
+  .blog-post .post-content .post-footer .read-more {
+    float: none; }
+
+  .blog-post .post-content .post-footer .post-meta {
+    margin-bottom: 20px; }
+
+  .left-sidebar {
+    margin-bottom: 30px; }
+
+  .right-sidebar {
+    margin-top: 30px; }
+
+  .call-to-action-2 h3 {
+    margin-bottom: 30px; }
+
+  .footer-menu ul {
+    text-align: center; }
+
+  .banner h1 {
+    font-size: 50px;
+    line-height: 50px; }
+
+  .slogan-section {
+    text-align: center; }
+    .slogan-section a {
+      float: none;
+      margin-top: 30px; 
+  } 
+  .mobile-responsive-mb150{
+    margin-bottom: -150px;
+  }  
+  .mobile-responsive-mb70{
+    margin-bottom: -70px;
+  }
+  .mobile-responsive-hidden{
+    visibility: hidden;
+  }
+  .mobile-responsive-mb140{
+    margin-bottom: -140px;
+  }
+  .mobile-responsive-mb60{
+    margin-bottom: -60px;
+  }
+  .mobile-responsive-mb185{
+    margin-bottom: -185px;
+  }
+  .mobile-responsive-mb100{
+    margin-bottom: -100px;
+  }
+  .mobile-responsive-mb90{
+    margin-bottom: -90px;
+  }
+  .mobile-responsive-mt100{
+    margin-top: 100px;
+  }
+  .mobile-responsive-mt180{
+    margin-top: 180px;
+  }
+  .mobile-responsive-mt100-up{
+    margin-top: -100px;
+  }
+  .mobile-responsive-mt42{
+    margin-top: 42px;
+  }
+  .mobile-responsive-mt70-up{
+    margin-top: -60px;
+  }
+  .mobile-responsive-mt10-up{
+    margin-top: -10px;
+  }
+  .mobile-responsive-mt25-up{
+    margin-top: -25px;
+  }
+  .mobile-responsive-mt50-up{
+    margin-top: -50px;
+  }
+  .mobile-responsive-mt5-up{
+    margin-top: -5px;
+  }
+  .mobile-responsive-mt15-up{
+    margin-top: -15px;
+  }
+  .mobile-responsive-mb20{
+    margin-bottom: -20px;
+  }
+  .mobile-responsive-mb160{
+    margin-bottom: -160px;
+  }
+  .mobile-responsive-mb10{
+    margin-bottom: 10px;
+  }
+  .mobile-responsive-mb25{
+    margin-bottom: -30px;
+  }
+  .mobile-responsive-mb120{
+    margin-bottom: -120px;
+  }
+  .mobile-responsive-mb40{
+    margin-bottom: -50px;
+  }
+  .facebook-responsive{
+    margin-top: -75px;
+  }
+  footer{
+    margin-left: -70px;
+    padding: 5px;
+  }
+  .shell{
+    padding: 0;
+  }
+  .icon-box{
+    max-height: 370px!important;
+    font-size: 10px;
+    width: 120%;
+    margin-left: -12%;
+  }
+  .icon-box{
+    padding: 3px;
+  }
+  .box-header>h6{
+    font-size: 9px;
+  }
+  .box-header>h5{
+    font-size: 9px;
+  }
+  .icon-box>.box-top>.box-icon>img{
+    width: 100px!important;
+    height: 80px!important;
+  }
+  .icon-box>.box-top>.box-icon>.box-icon>img{
+    width: 100px!important;
+    height: 80px!important;
+  }
+  .offset-top-45>a{
+    padding: 0 5px;
+    font-size: 12px;
+    margin-top: -50px;
+  }
+  .box-body>p{
+    margin-bottom: -35px;
+  }
+  .icon-bar>a>i{
+    font-size: 17px;
+    float: left;
+  }
+  .icon-bar>a>h6{
+    float: right;
+    font-size: 10px;
+  }
+  .carousel-inner>.item>img{
+    width: 300px;
+  }
+  .content>i{
+    font-size: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar-default .navbar-brand img {
+    width: 110px;
+    margin-top: 23px; }
+
+  .parallax-slide-text-2 h1 {
+    font-size: 32px;
+    line-height: 55px; }
+
+  ul.filter li {
+    margin-bottom: 30px; }
+    ul.filter li a {
+      padding: 6px 15px; }
+
+  .portfolio-box.col-4 .portfolio-post {
+    width: 100%; }
+
+  .portfolio-post img {
+    width: 100% !important; }
+
+  .latest-news {
+    margin-bottom: 30px; }
+
+  .latest-news .news-details a {
+    margin-right: 30px; }
+
+  .right-half, .left-half {
+    display: none; }
+
+  .call-to-action-btn {
+    float: none !important; }
+
+  .revenue-gallery li {
+    width: 25%;
+    margin-right: 0; }
+
+  .text-section-left {
+    margin-bottom: 30px; }
+
+  .client-list {
+    margin: 0; }
+
+  .top-header .top-phone, .top-header .top-address {
+    display: none; }
+
+  .footer-social {
+    display: inline-block; }
+
+  .btn-2 {
+    display: none !important; }
+
+  .banner h1 {
+    font-size: 45px;
+    line-height: 50px; }
+
+  .pagination > li {
+    float: left;
+    padding-bottom: 5px; }
+
+  .mbl-mar-bottom-20 {
+    margin-bottom: 20px; 
+  }
+  .mobile-responsive-hidden{
+    display: none;
+  }  
+  .mobile-responsive-apear{
+    display: block;
+  } 
+}
+@media (max-width: 351px) {
+  .testimonial-slide .carousel-inner {
+    min-height: 550px; } 
+  .mobile-responsive-hidden{
+    display: none;
+  }    
+}
+@media (max-width: 320px) {
+  .banner h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }   
+  .mobile-responsive-hidden{
+    display: none;
+  }  
+}
+
+  .testimonial-slide .carousel-inner {
+    min-height: 550px; } }
+

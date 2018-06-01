@@ -1,0 +1,349 @@
+
+    .wrap{
+  width: 100%;
+    margin-bottom: 100px;
+}
+.menu_body{
+  background-color: #F8F8FF;
+  width: 20%;
+  float: left;
+  margin-top: -40px;
+  color: red;
+  border: 1px solid green;
+  height: 550px;
+}
+/*////////////////////////*/
+.header_Deliver{
+    padding: 15px;
+    display: block;
+}
+.header_Deliver .avatar{
+
+    display: inline-block;
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    background: url("../image/lgo3.png");
+}
+.header_Deliver .avatar:before {
+    content: ' ';
+    background: no-repeat center center;
+    background-size: contain;
+    margin: 5px;
+
+}
+.wrap .menu_body label{
+  font-family: 'Times New Roman';
+  font-size: 17px;
+}
+
+a {
+    cursor: pointer;
+}
+.header_Deliver .title {
+    font-size: 25px;
+    font-family: 'Times New Roman';
+    text-decoration: none;
+    color: black;
+}
+/*////////////////////////////*/
+
+.menu_body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #F8F8FF;
+}
+
+.menu_body ul li {
+  display: block;
+  position: relative;
+  /*float: left;*/
+  background:  #F8F8FF;
+}
+.menu_body ul li.active a{
+  color: #30408d;
+}
+.lst-right {
+  width: 80%;
+  float: left;
+}
+.list-items {
+  display: none;
+}
+.list-items.active {
+  display: block;
+}
+.menu_body li ul { display: block; }
+.menu_body ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: black;
+  z-index: 540px;
+}
+
+.menu_body ul li a:hover { background: #F8F8FF; }
+
+.menu_body li:hover > ul {
+  display: block;
+  position: absolute;
+}
+.menu_body li:hover li { float: none; }
+.menu_body li:hover a { background: #F8F8FF; }
+.menu_body li:hover li a:hover { background:  #F8F8FF; }
+.menu_body .main-navigation li ul li { border-top: 0; }
+.menu_body ul ul ul {
+  left: 100%;
+  top: 10px;
+}
+.menu_body ul:before,
+.menu_body ul:after {
+  content: " "; /* 1 */
+  /*display: table; *//* 2 */
+}
+.menu_body ul:after { clear: both; }
+
+
+/*/////////////////////////////*/
+/*charactor*/
+.wrap .menu_body a i{
+  float: right;
+}
+
+/*list product*/
+
+.list-items .items .avatar>img {
+  padding: 10px;
+  margin: 20px 10px 0 10px;
+  float: left;
+  display: block;
+  width: 30%;
+  height: 170px;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 8px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 8px rgba(0,0,0,0.3);
+  position: relative;
+  box-sizing: border-box;
+
+}
+
+ul{
+  list-style: none;
+  text-decoration: none;
+}
+/*////////////////////////*/
+
+.event{
+    width: 80%;
+    background-color: #F8F8FF;
+    /*margin: 0 15% 0 21%;*/
+    border-radius: 10px;
+    margin: 50px 0 30px 100px;
+}
+.event:after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: visible;
+}
+.event .img,
+.event .imfor_event{
+  float: left;
+  width: 50%;
+  height: 250px;
+  box-sizing: border-box;
+  padding: 10px;
+
+
+}
+.event .imfor_event p, .event .imfor_event h3{
+  color: #30408d;
+}
+/*//////////////////////////////////////////*/
+.wrap {
+  margin-bottom: 30px;
+}
+.wrap:after {
+  content: '';
+  display: block;
+  clear: both;
+  visibility: visible;
+}
+.wrapper a img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.list_pro_new {
+
+  float: left;
+  /*margin: 0 0 0 21%;*/
+  /*margin-top: 10px;*/
+  margin-top: -30px;
+}
+.list_pro_new:after {
+  content: '';
+  display: block;
+  clear: both;
+  visibility: visible;
+}
+.list_pro_new .wrapper {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  margin-bottom: 20px;
+  float: left;
+  display: block;
+  width: 30.555555%;
+  height: auto;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.list_pro_new .wrapper .ribbon-wrapper-green {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+.list_pro_new .wrapper .ribbon-wrapper-green .ribbon-green {
+  font: bold 15px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #BFDC7A;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45));
+  background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45);
+  background-image: -moz-linear-gradient(top, #BFDC7A, #8EBF45);
+  background-image: -ms-linear-gradient(top, #BFDC7A, #8EBF45);
+  background-image: -o-linear-gradient(top, #BFDC7A, #8EBF45);
+  color: #6a6340;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-green:before, .ribbon-green:after {
+  content: "";
+  border-top:   3px solid #6e8900;
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-green:before {
+  left: 0;
+}
+.ribbon-green:after {
+  right: 0;
+}​
+
+
+/*zoom*/
+
+.describe_food{
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+}
+
+.describe_food .thumb-nails {
+  background-color: #F8F8FF;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  border-radius: 10px;
+  margin: 30px 0 0 20px;
+
+}
+
+.describe_food .thumb-nails .food-image {
+
+  max-width: 270px;
+  max-height: 120px;
+  overflow: hidden;
+
+}
+
+.describe_food .thumb-nails .images {
+  transition: 2s;
+}
+
+.describe_food .thumb-nails:hover .images {
+  transform: scale(1.5);
+}
+
+.describe_food .thumb-nails:hover:before {
+  /*content: "Well Come";*/
+  text-align: center;
+  background-color: rgba(0, 0, 255, 0.3) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.food-intro  {
+  text-align: center;
+  color: #30408d;
+
+}
+
+.food-intro button {
+  border-radius: 5px;
+  background-color: #5cb85c;
+  padding: 7px 15px;
+  border:0;
+
+}
+.food-intro button a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/*style flat*/
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #f7bd29;
+  color: black;
+}
+.pad-item{
+  margin-left: 10px;
+}
