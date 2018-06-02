@@ -1,14 +1,26 @@
 @extends('layouts.master')
 @section('content')
-	<section class="demo_wrapper">
+	<section class="demo_wrapper mobile-responsive-mb80">
 			<article class="demo_block">
 				<!-- <h5 id="main-title">Simple demo with default config</h5>
 				<a href="#glob" class='prev'>Prev</a> / <a href="#glob" class='next'>Next</a>
 		|| <a href="#glob" class='init'>Init</a> | <a href="#glob" class='reset'>Destroy</a> | <a href="#glob" class='reload'>Reload</a>
 		|| <a href="#glob" class='stop'>Stop</a> | <a href="#glob" class='start'>Start</a> -->
 			<ul id="demo1">
-				<li><a href="#slide1"><img src="assets/images/Background-web1-min.jpg" alt="This is caption 1 <a href='#link'>Even with links!</a>"></a></li>
-				<li><a href="#slide2"><img src="assets/images/Background-web2.jpg"></a></li>
+				<li><a href="#slide1"><img src="assets/images/Background-web4.jpg"></a>
+          <div class="carousel-caption" style="right: 5%;left: 5%;text-shadow: none;">
+            <h3>DISCOVER THE CITY WITH LOCAL STUDENTS</h3>
+            <h5>we strive to promote Da Nang's beauty from the local's perspective!</h5>
+            <a type="button" class="btn btn-warning" href="https://docs.google.com/forms/d/e/1FAIpQLSc7rOXw8bf2o3eEmZDAdsreEgfvpUTGzeu1CDVgC7ufgInIgw/viewform" style="background-color:#F5BC25;border:none;">Book now</a>
+          </div>
+        </li>
+				<li><a href="#slide2"><img src="assets/images/Background-web3.jpg"><a href='https://www.facebook.com/danangfreewalkingtour/'></a>
+          <div class="carousel-caption" style="text-shadow: none;">
+          <h3>VIRTUAL TOUR GUIDE</h3>
+            <h5>Get real time answers from locals<br/>Start the conversation at: www.facebook/danangfreewalkingtour</h5>
+            <a type="button" class="btn btn-warning" href="https://www.facebook.com/danangfreewalkingtour/" style="background-color:#F5BC25;border:none"><i class="fab fa-facebook-messenger"></i> MESSAGE US</a>
+          </div>
+        </li>
 				<!-- <li><a href="#slide3"><img src="img/image-4.jpg" alt="And this is some very long caption for slide 3. Yes, really long."></a></li> -->
 			</ul>
 			</article>
@@ -381,18 +393,18 @@
             </div>
             
             <div class="column-service cars">
-              <div class="content-service" onclick="myService(document.getElementById('id02').style.display='block')">
+              <div class="content-service" onclick="myService(document.getElementById('id01').style.display='block')">
                 <img src="assets/images/DNFWT Basic Package 2.jpg" alt="Car" style="width:100%">
               </div>
             </div>
 
             <div class="column-service people">
-              <div class="content-service" onclick="myService(document.getElementById('id03').style.display='block')">
+              <div class="content-service" onclick="myService(document.getElementById('id01').style.display='block')">
                 <img src="assets/images/DNFWT Basic Package 3.jpg" alt="Car" style="width:100%">
               </div>
             </div>
             <div class="column-service people">
-              <div class="content-service" onclick="myService(document.getElementById('id04').style.display='block')">
+              <div class="content-service" onclick="myService(document.getElementById('id01').style.display='block')">
               <img src="assets/images/DNFWT Basic Package 4.jpg" alt="Car" style="width:100%">
               </div>
             </div>
@@ -403,12 +415,15 @@
         </section>
         <div id="id01" class="modal">
   
-            <form class="modal-content animate" action="/action_page.php">
-              <div class="imgcontainer">
+            <form class="modal-content animate" action="{{url('/paypal')}}" method="post">
+              <input type="hidden" name="amount" value="1">
+              <div class="imgcontainer" style="text-align: center;">
                 <span onclick="document.getElementById('id01').style.display='none';$('header').css('display','block');" class="close" title="Close Modal">&times;</span>
+                <h6>Please Email To</h6>
+                <h5 style="color: #f5bc25;word-wrap: break-word;">danangfreewalkingtour@gmail.com</h5>
               </div>  
-              <div class="container-fluid">  
-                <div class="row">
+            <!--  <div class="container-fluid">  
+                 <div class="row">
                   <div class="col-md-6" style="text-align: center">  
                     <img src="assets/images/DNFWT Basic Package 1.jpg" alt="Avatar" class="avatar">
                     <h5 style="color: green">Price: $18</h5>
@@ -681,7 +696,7 @@
                     <label>Phone:</label>
                       <input type="text" placeholder="Enter Your Phone" required>
                   </div>  
-                </div>
+                </div> -->
               </div>  
 
               <div class="container-form" style="background-color:#f1f1f1;text-align: right;border-top:1px solid #f5bc25;margin-top: 20px">
@@ -689,7 +704,7 @@
               </div>
             </form>
           </div>
-          <div id="id02" class="modal">
+          <!-- <div id="id02" class="modal">
   
             <form class="modal-content animate" action="/action_page.php">
               <div class="imgcontainer">
@@ -1555,7 +1570,7 @@
                 <button type="submit" class="cancelbtn">Checkout</button>
               </div>
             </form>
-          </div>
+          </div> -->
         <!-- Start Latest Blog Section -->
         <section class="pad-t80 pad-b50" style="margin-bottom: -20px" id="newspaper-last">
             <div class="container">

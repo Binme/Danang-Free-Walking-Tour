@@ -46,7 +46,24 @@ class PaymentController extends Controller
     }
     public function payWithpaypal(Request $request)
     {
-
+        $amount = $request->get('amount');
+        switch ($amount) {
+            case '1':
+                dd('Con gaaaaa');
+                break;
+            case '1':
+                dd('Con gaaaaa');
+                break;    
+            case '1':
+                dd('Con gaaaaa');
+                break;
+            case '1':
+                dd('Con gaaaaa');
+                break;
+            default:
+                return redirect('/');
+                break;
+        }
         $payer = new Payer();
         $payer->setPaymentMethod('paypal');
 

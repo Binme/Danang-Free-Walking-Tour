@@ -92,14 +92,14 @@ class RecomsTableSeeder extends Seeder
             [
                 'filter'=>'drink',
                 'img'=>'foody-mobile-n-du-jpg-864-636219870599870164.jpg',
-        		'title'=>'Trà Sữa Money - Nguyễn Du',
+        		'title'=>'Money Milkteaa & Coffee',
         		'address'=>'17 Nguyễn Du,  Quận Hải Châu, Đà Nẵng',
         		'rating'=>'⭐⭐⭐⭐⭐',
             ],
             [
                 'filter'=>'drink',
                 'img'=>'foody-mobile-960x550-gong-cha-dn--528-636403074352913575.jpg',
-        		'title'=>'Trà Sữa Gong Cha - 貢茶 - Nguyễn Văn Linh',
+        		'title'=>'Gong Cha - 貢茶 - Nguyễn Văn Linh',
         		'address'=>'25 - 29 Nguyễn Văn Linh,  Quận Hải Châu, Đà Nẵng',
         		'rating'=>'⭐⭐⭐⭐⭐',
             ],

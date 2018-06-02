@@ -199,8 +199,13 @@ class Recom_detailsTableSeeder extends Seeder
                 'img_4'=>'20708257_1218878438257413_378113438441011099_n.jpg',
                 'img_5'=>'15672971_1036351176510141_2246965785826206009_n.jpg',
                 'category'=>'Milk Tea',
-                'title'=>'Trà Sữa Money - Nguyễn Du',
-                'about'=>'_Cảm ơn mọi người đã xem tin và hãy share giúp MONEY để mọi người được biết và thông cảm cho MONEY nhé , Cảm ơn và yêu các fan MONEY rất nhiều ❤️',
+                'title'=>'Money Milkteaa & Coffee',
+                'about'=>'_Money Milkteaa &  Coffee on both excellent for the quality of a cup of milk tea. The shop is unbelievably cute ,spacious and clean that is great place to go a milk tea in the Danang area .Everything tasted so fresh! Definitely highly recommended!
+Gong Cha
+Gong Cha -One of the top milk tea places . The shop uses high-quality tea leaves that are brewed fresh on a daily basis.  High-grade filters also ensure that the water used is free from harmful bacteria. There was a variety of the Gong Cha Signature Tea to choose from menu such as Freshly brewed Green, Black, Oolong or Alisan tea is topped with a generous, creamy layer of fresh milk foam , everything tastes fantastic .Very prompt service. Even when it`s packed, you seem to get your drinks really quickly. They have indoor and outdoor seating. Gong Cha is really a great place to go for a milk tea in the Da Nang area.
+VEVY Milktea
+There was a variety of drinks to choose from menu. Absolutely amazing drinks at very reasonable prices .Staff are enthusiastic, thoughtful, friendly.Definitely highly recommended!
+',
                 'address'=>'17 Nguyễn Du,  Quận Hải Châu, Đà Nẵng',
                 'hour'=>' 14:30 - 21:00',
                 'price'=>'15.000đ - 25.000đ',
@@ -215,8 +220,8 @@ class Recom_detailsTableSeeder extends Seeder
                 'img_4'=>'foody-mobile-gong-cha2-jpg-305-636173909122516269.jpg',
                 'img_5'=>'thiết kế quán trà sữa đẹp 24 copy.jpg',
                 'category'=>'Milk Tea',
-                'title'=>'Trà Sữa Gong Cha - 貢茶 - Nguyễn Văn Linh',
-                'about'=>'_Dòng thức uống đặc biệt kết hợp giữa trà nguyên chất với lớp milk foam béo cùng vị mặn nhẹ đặc trưng mang đến điểm nhấn sáng tạo cho một thức uống quen thuộc.',
+                'title'=>'Gong Cha - 貢茶 - Nguyễn Văn Linh',
+                'about'=>'_Gong Cha -One of the top milk tea places . The shop uses high-quality tea leaves that are brewed fresh on a daily basis.  High-grade filters also ensure that the water used is free from harmful bacteria. There was a variety of the Gong Cha Signature Tea to choose from menu such as Freshly brewed Green, Black, Oolong or Alisan tea is topped with a generous, creamy layer of fresh milk foam , everything tastes fantastic .Very prompt service. Even when it`s packed, you seem to get your drinks really quickly. They have indoor and outdoor seating. Gong Cha is really a great place to go for a milk tea in the Da Nang area.',
                 'address'=>'25 - 29 Nguyễn Văn Linh,  Quận Hải Châu, Đà Nẵng',
                 'hour'=>'08:00 - 22:00',
                 'price'=>'20.000đ - 50.000đ',
@@ -232,9 +237,7 @@ class Recom_detailsTableSeeder extends Seeder
                 'img_5'=>'20729694_1958647704414695_5783096403311703762_n.jpg',
                 'category'=>'Milk Tea',
                 'title'=>'Vevy Milktea',
-                'about'=>'_Wishing you a day as #beautiful as you are #Girls
-#happywomensday #vevypromotion #thankswithlove 
-📞🛒 0901.175.505 - 0937.959.505',
+                'about'=>'_There was a variety of drinks to choose from menu. Absolutely amazing drinks at very reasonable prices .Staff are enthusiastic, thoughtful, friendly.Definitely highly recommended!',
                 'address'=>'71 - 73 Phan Châu Trinh,  Quận Hải Châu, Đà Nẵng',
                 'hour'=>'09:00 - 22:30',
                 'price'=>'13.000đ - 23.000đ',
@@ -250,29 +253,9 @@ class Recom_detailsTableSeeder extends Seeder
                 'img_5'=>'32559382_197744987511736_6414402561289224192_n.jpg',
                 'category'=>'Bar',
                 'title'=>'Sky21 Bar - Belle Maison Parosand Danang Hotel',
-                'about'=>'_Sky 21 bar: Enjoy the city and sea view fully
-➡ Weekly entertainment
-Tuesday: Acoustic by Hero band
-Thursday: Ladies Night by Wasabi band
-Friday: Smooth & Easy night by Tommy
-Saturday: City emotion by Wasabi band
-Sunday: L.A.Blues by HAT JAZZ band
-➡ PROMOTION
-🎁 "WOW Combo Breakfast or Lunch"- Only 199,000 VND/ 2 pax (net)
-- 1 pizza (8 slides)
-- 2 salads
-- 2 desserts
-- 2 soft drinks
-Available time: 7:00am - 2:00pm
-🎁 Only 99,000 VND for Breakfast or Lunch Combo
-Including: 01 Pho (chicken or beef) or 01 My Quang + 01 coffee 
-Valid from 7:00am-2:00pm
-🎁 Happy hour - Buy 1 get 1 free for limited menu
-Time: 6:00pm - 7:00pm everyday
-Enjoy the city and sea view fully
-Book table: 091 724 86 88
-21st floor - BELLE MAISON PAROSAND DANANG HOTEL
-216 Vo Nguyen Giap St, Son Tra District, Danang.',
+                'about'=>'_This sky 21 is one of the best in Danang with very nice city view on the back.Nice rooftop that connected with the hotel’s swimming pool, beautiful view of Da Nang’s skyline and the ocean. The bar gives you a very nice,relaxing vibe for those who want to escape the crowd and just want to have a chill evening. The price is affordable and good to chit chat with friends. Excellent food! Super friendly and professional staff! Breathtaking roof top bar! Unforgettable experience! They also have different bands playing each night of the week with DJ on the weekend. It was a very nice acoustic band when while we were there on Tuesday. Highly recommended!
+The City PUB
+It`s really a lovely, modern, popular and well decorate pub .The place has plenty of seating space. there are also nice seats outside with high chairs and candles .If you`re coming with friends, I think this is a great spot to stop .It`s located in the centre of the city. It offers variety of beer. Staff is very kind and friendly.. Music is great and it has some special energy. Such combination makes this place perfect for a night out. Don`t miss this place, it`s really worth visiting.',
                 'address'=>'Tầng 21, Belle Maison Parosand Danang Hotel, 216 Võ Nguyên Giáp,  Quận Sơn Trà, Đà Nẵng',
                 'hour'=>' 07:00 - 23:59',
                 'price'=>'60.000đ - 200.000đ',
@@ -288,7 +271,7 @@ Book table: 091 724 86 88
                 'img_5'=>'14516565_546025372255242_6829777334919282300_n.jpg',
                 'category'=>'Bar/pub',
                 'title'=>'The City Pub - Bờ Sông Hàn',
-                'about'=>'_Nhạc Acoustic Tại The City Pub 🎹🎼🎶🎶🎶🎸🎻🎺🎵🎶🎵🎶❤️❤️❤️',
+                'about'=>'_It`s really a lovely, modern, popular and well decorate pub .The place has plenty of seating space. there are also nice seats outside with high chairs and candles .If you`re coming with friends, I think this is a great spot to stop .It`s located in the centre of the city. It offers variety of beer. Staff is very kind and friendly. Music is great and it has some special energy. Such combination makes this place perfect for a night out. Don`t miss this place, it`s really worth visiting.',
                 'address'=>'92 Bạch Đằng,  Quận Hải Châu, Đà Nẵng',
                 'hour'=>'16:00 - 23:00 ',
                 'price'=>'200.000đ - 500.000đ',
@@ -304,11 +287,7 @@ Book table: 091 724 86 88
                 'img_5'=>'13921018_239894309743591_902547445104054473_n.jpg',
                 'category'=>'Bar',
                 'title'=>'Never Mind - Top Bar & Coffee',
-                'about'=>'_Da Nang Nevermind 
-On the 15th floor of the hotel at Golden Sea 3.
-Address at 242 Vo Nguyen Giap - Da Nang.
-Drink only from 30.000 Viet nam dong
-Very pleased to welcome you. <3',
+                'about'=>'_The bar is located on the top floor of Golden Sea Hotel 3 close to the sea so the view is quite beautiful. There is a swimming pool too .Danang is looking at the fantastic night view from Top Bar while enjoying your meal and drinks.',
                 'address'=>'Tầng 15, Golden Sea 3 Hotel, 242 Võ Nguyên Giáp,  Quận Sơn Trà, Đà Nẵng',
                 'hour'=>'10:00 - 00:00 ',
                 'price'=>'30.000đ - 630.000đ',
@@ -324,7 +303,12 @@ Very pleased to welcome you. <3',
                 'img_5'=>'vanda-hotel (1).jpg',
                 'category'=>'Bar',
                 'title'=>'Top View Bar - Vanda Hotel',
-                'about'=>'_Giới thiệu Top View Bar - Vanda Hotel. Đến với Top View Bar thực khách sẽ được ngắm khung cảnh Đà Nẵng về đêm.',
+                'about'=>'_It only take less than 10 minutes to go by car from the airport straight to our Vanda hotel on the most beautiful street of Da Nang City.The atmosphere was very bright and the staff was excellent Absolutely amazing food and drinks at very reasonable prices. The best way to spend an evening in Danang is looking at the fantastic night view from Top View Bar while enjoying your meal and drinks.
+Buffalo bar intercontinental resort
+
+Staff is what I call the true hospitality, always welcoming with a “xin chao” and smile. They care about you and what activities we were doing during our stay
+ 
+The view is amazing especially at night',
                 'address'=>'03 Nguyễn Văn Linh, P. Bình Hiên,  Quận Hải Châu, Đà Nẵng',
                 'hour'=>'16:00 - 23:00',
                 'price'=>'50.000đ - 100.000đ',
@@ -340,12 +324,7 @@ Very pleased to welcome you. <3',
                 'img_5'=>'Barefoot_Restaurant_-_Kitchen.jpg',
                 'category'=>'Bar',
                 'title'=>'Buffalo Bar - InterContinental Resort',
-                'about'=>'_Buffalo Bar
-Located within La Maison 1888, Buffalo Bar offers the warm and intimate feel of a private club. Sip fine wines within the elegant-yet-quirky interior, or enjoy a chilled glass of champagne accompanied by the evening breeze on the stylish veranda.
-
-Buffalo Bar caters to sophisticated tastes, offering an extensive list of wines, Cognac, aged whiskies, Back Vintage of Armagnac, original Cuban Cigars or dessert. 
-
-The buffalo is the essential workhouse of the Vietnamese farm. In legend, when a buffalo dons a hat, he characterizes a drunken person; any mention of this to a Vietnamese person will bring a chuckle of delight and recognition',
+                'about'=>'_Great bar with great food. Loved the American style food (sticky wings, ribs), perfect with a glass or two of wine. It’s a cool looking venue with a really lovely bar area, outdoor seating and a dining area also. It’s a casual dining vibe with high tables and stools and you order at the bar. Staff is what I call the true hospitality, always welcoming with a “xin chao” and smile.It’s a great place to just chill and has a fun vibe. Highly recommend',
                 'address'=>'Bán Đảo Sơn Trà,  Quận Sơn Trà, Đà Nẵng',
                 'hour'=>'17:00 - 01:00',
                 'price'=>'300.000đ - 1.100.000đ',
@@ -361,7 +340,10 @@ The buffalo is the essential workhouse of the Vietnamese farm. In legend, when a
                 'img_5'=>'foody-factory-47-pub-778-636082491307200212.jpg',
                 'category'=>'Bar',
                 'title'=>'Factory 47 Riverview',
-                'about'=>'_',
+                'about'=>'_Factory 47 got really nice and reasonably priced drink options.
+Great burger, love the chill atmosphere looking over Han River.... great for a lazy afternoon after the sumptuous meal!
+The staff were extremely polite and they enjoyed their workplace too which is a bonus. Even the venue had a chill vibe with a very beautiful set up. Music was great too!
+Service is quick and staff are friendly',
                 'address'=>'28 Bạch Đằng,  Quận Hải Châu, Đà Nẵng',
                 'hour'=>'10:00 - 02:00',
                 'price'=>'20.000đ - 80.000đ',
