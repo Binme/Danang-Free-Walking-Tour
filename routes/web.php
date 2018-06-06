@@ -15,4 +15,7 @@ Route::get('/', 'HomeController@index');
 Route::get('/news/{id}','New_detailController@getNewsById');
 Route::get('/recoms/{id}','Recom_detailController@index');
 Route::post('/paypal','PaymentController@payWithpaypal');
+Route::get('/admin',function(){
+	return view('admin/index');
+});
 

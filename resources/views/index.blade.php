@@ -421,7 +421,10 @@
                 <span onclick="document.getElementById('id01').style.display='none';$('header').css('display','block');" class="close" title="Close Modal">&times;</span>
                 <h6>Please Email To</h6>
                 <h5 style="color: #f5bc25;word-wrap: break-word;">danangfreewalkingtour@gmail.com</h5>
-              </div>  
+              </div>
+            
+            </form>
+        </div>      
             <!--  <div class="container-fluid">  
                  <div class="row">
                   <div class="col-md-6" style="text-align: center">  
@@ -696,7 +699,7 @@
                     <label>Phone:</label>
                       <input type="text" placeholder="Enter Your Phone" required>
                   </div>  
-                </div> -->
+                </div>
               </div>  
 
               <div class="container-form" style="background-color:#f1f1f1;text-align: right;border-top:1px solid #f5bc25;margin-top: 20px">
