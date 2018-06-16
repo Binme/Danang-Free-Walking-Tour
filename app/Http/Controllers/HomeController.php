@@ -13,4 +13,7 @@ class HomeController extends Controller
     	$recoms = Recom::get();
     	return view('index',compact('news','recoms'));
     }
+    public function admin(){
+    	return view('admin/index');
+    }
 }
