@@ -221,7 +221,7 @@ There was a variety of drinks to choose from menu. Absolutely amazing drinks at 
                 'category'=>'Milk Tea',
                 'title'=>'Gong Cha - 貢茶 - Nguyễn Văn Linh',
                 'about'=>'_Gong Cha -One of the top milk tea places . The shop uses high-quality tea leaves that are brewed fresh on a daily basis.  High-grade filters also ensure that the water used is free from harmful bacteria. There was a variety of the Gong Cha Signature Tea to choose from menu such as Freshly brewed Green, Black, Oolong or Alisan tea is topped with a generous, creamy layer of fresh milk foam , everything tastes fantastic .Very prompt service. Even when it"s packed, you seem to get your drinks really quickly. They have indoor and outdoor seating. Gong Cha is really a great place to go for a milk tea in the Da Nang area.',
-                'address'=>'25 - 29 Nguyen Van Linh Street, Hai Chau District, Da Nang,'
+                'address'=>'25 - 29 Nguyen Van Linh Street, Hai Chau District, Da Nang',
                 'hour'=>'08:00 - 22:00',
                 'price'=>'20.000đ - 50.000đ',
                 'rating'=>'⭐⭐⭐⭐⭐',
@@ -271,7 +271,7 @@ It"s really a lovely, modern, popular and well decorate pub .The place has plent
                 'category'=>'Bar/pub',
                 'title'=>'The City Pub - Bờ Sông Hàn',
                 'about'=>'_It`s really a lovely, modern, popular and well decorate pub .The place has plenty of seating space. there are also nice seats outside with high chairs and candles .If you`re coming with friends, I think this is a great spot to stop .It`s located in the centre of the city. It offers variety of beer. Staff is very kind and friendly. Music is great and it has some special energy. Such combination makes this place perfect for a night out. Don`t miss this place, it`s really worth visiting.',
-                'address'=>'92 Bach Dang Street, Hai Chau District, Da Nang,'
+                'address'=>'92 Bach Dang Street, Hai Chau District, Da Nang',
                 'hour'=>'16:00 - 23:00 ',
                 'price'=>'200.000đ - 500.000đ',
                 'rating'=>'⭐⭐⭐⭐⭐',
