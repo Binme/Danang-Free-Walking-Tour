@@ -205,7 +205,7 @@ Gong Cha -One of the top milk tea places . The shop uses high-quality tea leaves
 VEVY Milktea
 There was a variety of drinks to choose from menu. Absolutely amazing drinks at very reasonable prices .Staff are enthusiastic, thoughtful, friendly.Definitely highly recommended!
 ',
-                'address'=>'17 Nguyen Du Street,  Hai Chau District, Da Nang,'
+                'address'=>'17 Nguyen Du Street,  Hai Chau District, Da Nang',
                 'hour'=>'14:30 - 21:00',
                 'price'=>'15.000đ - 25.000đ',
                 'rating'=>'⭐⭐⭐⭐⭐',
