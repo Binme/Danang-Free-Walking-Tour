@@ -5329,8 +5329,9 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1050;
+  background-color: rgba(0,0,0,0.4);
   display: none;
-  overflow: hidden;
+  overflow: auto;
   outline: 0;
 }
 
@@ -14247,3 +14248,6 @@ body {
   breakpoint-xl: 1200px;
 }
 /*# sourceMappingURL=style.css.map */
+.hello{
+  display: none;
+}

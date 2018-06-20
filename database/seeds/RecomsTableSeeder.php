@@ -138,12 +138,19 @@ class RecomsTableSeeder extends Seeder
         		'address'=>'03 Nguyễn Văn Linh, P. Bình Hiên,  Quận Hải Châu, Đà Nẵng',
         		'rating'=>'⭐⭐⭐⭐⭐',
             ],
+          //   [
+          //       'filter'=>'drink',
+          //       'img'=>'foody-mobile-buffalo-bar-intercontinental-resort-da-nang.jpg',
+        		// 'title'=>'Buffalo Bar - InterContinental Resort',
+        		// 'address'=>'Bán Đảo Sơn Trà,  Quận Sơn Trà, Đà Nẵng',
+        		// 'rating'=>'⭐⭐⭐⭐⭐',
+          //   ],
             [
                 'filter'=>'drink',
-                'img'=>'foody-mobile-buffalo-bar-intercontinental-resort-da-nang.jpg',
-        		'title'=>'Buffalo Bar - InterContinental Resort',
-        		'address'=>'Bán Đảo Sơn Trà,  Quận Sơn Trà, Đà Nẵng',
-        		'rating'=>'⭐⭐⭐⭐⭐',
+                'img'=>'34459215_438508303262260_1482441351290159104_n.jpg',
+                'title'=>'Monaco Coffee',
+                'address'=>'Nguyen Duyet,  Quận Son Tra, Đà Nẵng',
+                'rating'=>'⭐⭐⭐⭐⭐',
             ],
             [
                 'filter'=>'drink',
@@ -350,9 +357,9 @@ class RecomsTableSeeder extends Seeder
             ],
             [
                 'filter'=>'entertainment',
-                'img'=>'foody-mobile-foody-k97-gaming-ps4-227-635914763424983676.jpg',
-                'title'=>'WE PES Game Lounge PS4',
-                'address'=>'K254/3 Hoàng Diệu,  Quận Hải Châu, Đà Nẵng',
+                'img'=>'art-museum.jpg',
+                'title'=>'ART IN PARADISE DANANG',
+                'address'=>'C2-10 (opposite to 133) Tran Nhan Tong Street, Tho Quang ward, Son Tra District, Danang City',
                 'rating'=>'⭐⭐⭐⭐⭐',
             ],
             [

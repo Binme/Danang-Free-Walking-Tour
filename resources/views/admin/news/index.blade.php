@@ -2,8 +2,110 @@
 @section('content')
         <div class="container-fluid">
           <div class="animated fadeIn">
-              
-
+              @if((Auth::user()->role == 2) || (Auth::user()->role == 1))
+            <div class="row">
+              <div class="col-md-12">
+              <div class="card">
+                <div class="card-header">
+                  Create Recom
+                  <a class="btn btn-primary" role="button" style="float: right;" onclick="myService(document.getElementById('id03').style.display='block')">Create</a>
+                </div>
+              </div>
+              </div>
+            </div>
+            @else
+            @endif
+          <div class="row hello" id="id03">
+            <div class="col-md-12">
+          <div class="animated fadeIn">
+              <div class="row">
+                <div class="col-md-12">  
+                  <div class="card">
+                  <div class="card-header">
+                    <strong>Create news</strong>
+                    
+                    <span onclick="document.getElementById('id03').style.display='none';" class="close" title="Close Modal">&times;</span>
+                  </div>
+                  <div class="card-body">
+                    <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="text-input">Title:</label>
+                        <div class="col-md-9">
+                          <input type="text" id="text-input" name="text-input" class="form-control" value="Gia Bao">
+                          <span class="help-block">Please enter your title</span>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="text-input">Author:</label>
+                        <div class="col-md-9">
+                          <input type="text" id="text-input" name="text-input" class="form-control" value="Gia Bao">
+                          <span class="help-block">Please enter your name </span>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="file-input">Picture 1:</label>
+                        <div class="col-md-9">
+                          <input type="file" id="file-multiple-input" name="file-multiple-input" multiple>
+                        </div>
+                      </div>
+                      <div class="form-group row hello" id="1and1">
+                        <label class="col-md-3 col-form-label" for="text-input">Strong text 1:</label>
+                        <div class="col-md-9">
+                          <input type="text" id="text-input" name="text-input" class="form-control" value="Gia Bao">
+                          <span class="help-block">Please enter your strong text</span>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="textarea-input">Line 1:</label>
+                        <div class="col-md-9">
+                          <textarea id="textarea-input" name="textarea-input" rows="2" class="form-control" placeholder="Content.."></textarea>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="card-footer">
+                    <button type="submit" class="btn btn-sm btn-primary">
+                      <i class="fas fa-sign-in-alt"></i> Submit</button>
+                  </div>
+                  </form>
+                </div>
+                </div>
+              </div>  
+              </div>
+            </div>
+             
+              <div class="col-md-12">
+              <div class="card">
+                <div class="card-header">
+                  <a class="btn btn-warning" role="button">Img_1</a>
+                  <a class="btn btn-danger" role="button">Str_1</a>
+                @for($i=1;$i<=20;$i++)  
+                  <a class="btn btn-primary" role="button" onclick="myService(document.getElementById('1and{{i}}').style.display='block')">{{$i}}</a>
+                @endfor
+                </div>
+                <div class="card-header">
+                  <a class="btn btn-warning" role="button">Img_2</a>
+                  <a class="btn btn-danger" role="button">Str_2</a>
+                @for($i=1;$i<=20;$i++)  
+                  <a class="btn btn-primary" role="button">{{$i}}</a>
+                @endfor
+                </div>
+                <div class="card-header">
+                  <a class="btn btn-warning" role="button">Img_3</a>
+                  <a class="btn btn-danger" role="button">Str_3</a>
+                @for($i=1;$i<=20;$i++)  
+                  <a class="btn btn-primary" role="button">{{$i}}</a>
+                @endfor
+                </div>
+                <div class="card-header">
+                  <a class="btn btn-warning" role="button">Img_4</a>
+                  <a class="btn btn-danger" role="button">Str_4</a>
+                @for($i=1;$i<=20;$i++)  
+                  <a class="btn btn-primary" role="button">{{$i}}</a>
+                @endfor
+                </div>
+              </div>
+              </div>
+            </div>
             <div class="card">
                     <table class="table table-responsive-sm table-hover table-outline mb-0">
                       <thead class="thead-light">

@@ -62,8 +62,10 @@ Route::group(['prefix' => 'admin','middleware' => 'isAdmin'], function () {
     });
     Route::group(['prefix' => 'news'], function() {
 
-        // Show list user
+        // Show list news
         Route::get('/', 'NewController@index');
+    
+        Route::get('/create','NewController@createNews');
     });
     Route::group(['prefix' => 'service'], function() {
 

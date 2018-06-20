@@ -37,7 +37,7 @@ class UserController extends Controller
     }
     public function logout(){
         Auth::logout();
-        return redirect('/');
+        return redirect('/view/login');
     }
     public function viewEditUser($id){
         $users = User::findOrFail($id);

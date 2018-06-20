@@ -129,9 +129,16 @@
         var modal_2 = document.getElementById('id02');  
           if (event.target == modal_2) {
             modal_2.style.display = "none";
-          }         
+          }
+        var hello = document.getElementById('id03');
+          if (event.target == hello) {
+            hello.style.display = "none";
+          }   
+        var hello_1 = document.getElementById('1and1');
+          if (event.target == hello_1) {
+            hello.style.display = "none";
+          }          
       }
     </script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
   </body>
 </html>
