@@ -18,7 +18,7 @@
 <body>
     <!-- Chat with us -->
     <div class="chat wow bounceInLeft" data-wow-duration="2s">
-        <a href="https://m.me/danangfreewalkingtour" target="_bla">
+        <a href="https://m.me/danangfreewalkingtour" target="_blank">
             <i class="fab fa-facebook-messenger"></i>
         </a>
         <div></div>
@@ -54,36 +54,36 @@
                     </a>
                 </div>
                 <div class="head-phone_number">
-                    <a href="">
+                    <a href="https://www.google.com/maps/place/Da+Nang+Free+Walking+Tour/@16.068497,108.224787,14z/data=!4m5!3m4!1s0x0:0x721851f4e408aa9!8m2!3d16.068497!4d108.224787?hl=vi">
                         <i class="fas fa-phone" data-fa-transform="rotate-90"></i>
                         <p>+84 90 563 14 19</p>
                     </a>
                 </div>
             </div>
             <div class="head-link_contact">
-                <a href="">
+                <a href="https://www.facebook.com/danangfreewalkingtour/">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="">
+                <a href="https://plus.google.com/118025859778243251042">
                     <i class="fab fa-google-plus-g"></i>
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/danangfreewalkingtour/">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="">
+                <a href="https://www.youtube.com/channel/UCo8UN9Csv2pC0tMOSVAZD6g/videos">
                     <i class="fab fa-youtube"></i>
                 </a>
             </div>
         </div>
         <div class="head-menu">
             <div class="header-image">
-                <a href="">
+                <a href="http://danangfreewalkingtour.com">
                     <img src="assets/images/logo.jpg" alt="">
                 </a>
             </div>
             <div class="menu-list">
                 <div class="home_but">
-                    <a href="#">HOME</a>
+                    <a href="http://danangfreewalkingtour.com">HOME</a>
                 </div>
                 <div class="route">
                     <a href="#route">ROUTE</a>
@@ -122,7 +122,7 @@
                             </h1>
                             <h4>WE STRIVE TO PROMOTE DA NANG'S BEAUTY FROM THE LOCAL'S PERSPECTIVE!</h4>
                             <div>
-                                <a href="">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rOXw8bf2o3eEmZDAdsreEgfvpUTGzeu1CDVgC7ufgInIgw/viewform">
                                     BOOK NOW
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
@@ -139,7 +139,7 @@
                                 GET REAL TIME ANSWERS FROM LOCALS START THE CONVERSATION AT: WWW.FACEBOOK/DANANGFREEWALKINGTOUR
                             </h4>
                             <div>
-                                <a href="">
+                                <a href="https://m.me/danangfreewalkingtour" target="_blank">
                                     MESSAGE US
                                 </a>
                             </div>
@@ -184,22 +184,22 @@
                 <div class="card-wrap">
                     <div class="card-detail text-center">
                         <div class="img-detail">
-                            <img src="assets/images/danangtour.png" alt="">
+                            <img class="cardImage" src="assets/images/danangtour.png" alt="">
                         </div>
                         <div class="detail-title">
                             <a href="">DA NANG AROUND YOU</a>
                         </div>
                         <div class="icon-detail">
-                            <a href="">
+                            <a href="https://www.facebook.com/danangfreewalkingtour/">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="">
+                            <a href="https://plus.google.com/118025859778243251042">
                                 <i class="fab fa-google-plus-g"></i>
                             </a>
-                            <a href="">
+                            <a href="https://www.instagram.com/danangfreewalkingtour/">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="">
+                            <a href="https://www.youtube.com/channel/UCo8UN9Csv2pC0tMOSVAZD6g/videos">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </div>
@@ -215,7 +215,7 @@
                             students.
                         </div>
                         <div class="button">
-                            <a href="#" class="but">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rOXw8bf2o3eEmZDAdsreEgfvpUTGzeu1CDVgC7ufgInIgw/viewform" class="but">
                                 BOOK NOW
                                 <i class="fas fa-chevron-right"></i>
 
@@ -224,22 +224,22 @@
                     </div>
                     <div class="card-detail text-center">
                         <div class="img-detail">
-                            <img src="assets/images/food.jpg" alt="">
+                            <img class="cardImage" src="assets/images/food.jpg" alt="">
                         </div>
                         <div class="detail-title">
                             <a href="">FOODY STORY TOUR </a>
                         </div>
                         <div class="icon-detail">
-                            <a href="">
+                            <a href="https://www.facebook.com/danangfreewalkingtour/">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="">
+                            <a href="https://plus.google.com/118025859778243251042">
                                 <i class="fab fa-google-plus-g"></i>
                             </a>
-                            <a href="">
+                            <a href="https://www.instagram.com/danangfreewalkingtour/">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="">
+                            <a href="https://www.youtube.com/channel/UCo8UN9Csv2pC0tMOSVAZD6g/videos">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </div>
@@ -254,7 +254,7 @@
                                 10:00AM - 1:00PM, 5:00PM - 8:00PM. Immerse in culture, history and people through 7 famous dishes in Da Nang and the 7 stories behind them.
                         </div>
                         <div class="button">
-                            <a href="#" class="but">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rOXw8bf2o3eEmZDAdsreEgfvpUTGzeu1CDVgC7ufgInIgw/viewform" class="but">
                                 BOOK NOW
                                 <i class="fas fa-chevron-right"></i>
 
@@ -265,22 +265,22 @@
                 <div class="card-wrap">
                     <div class="card-detail text-center">
                         <div class="img-detail">
-                            <img src="assets/images/7-bao-tang-da-nang.JPG" alt="">
+                            <img class="cardImage" src="assets/images/7-bao-tang-da-nang.JPG" alt="">
                         </div>
                         <div class="detail-title">
                             <a href="">MUSEUM TOUR</a>
                         </div>
                         <div class="icon-detail">
-                            <a href="">
+                            <a href="https://www.facebook.com/danangfreewalkingtour/">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="">
+                            <a href="https://plus.google.com/118025859778243251042">
                                 <i class="fab fa-google-plus-g"></i>
                             </a>
-                            <a href="">
+                            <a href="https://www.instagram.com/danangfreewalkingtour/">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="">
+                            <a href="https://www.youtube.com/channel/UCo8UN9Csv2pC0tMOSVAZD6g/videos">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </div>
@@ -295,8 +295,8 @@
                                 Email us your interests, requirements and budget, let us locals help you plan the best vacation in Da Nang. Who else know our city better than us?
                         </div>
                         <div class="button">
-                            <a href="#" class="but">
-                                BOOK NOW
+                            <a href="https://www.facebook.com/danangfreewalkingtour/" class="but">
+                                EMAIL US
                                 <i class="fas fa-chevron-right"></i>
 
                             </a>
@@ -304,22 +304,22 @@
                     </div>
                     <div class="card-detail text-center">
                         <div class="img-detail">
-                            <img src="assets/images/tripplanner.png" alt="">
+                            <img class="cardImage" src="assets/images/tripplanner.png" alt="">
                         </div>
                         <div class="detail-title">
                             <a href="">YOUR TRIP PLANNER </a>
                         </div>
                         <div class="icon-detail">
-                            <a href="">
+                            <a href="https://www.facebook.com/danangfreewalkingtour/">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="">
+                            <a href="https://plus.google.com/118025859778243251042">
                                 <i class="fab fa-google-plus-g"></i>
                             </a>
-                            <a href="">
+                            <a href="https://www.instagram.com/danangfreewalkingtour/">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="">
+                            <a href="https://www.youtube.com/channel/UCo8UN9Csv2pC0tMOSVAZD6g/videos">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </div>
@@ -334,8 +334,8 @@
                                 Email us your interests, requirements and budget, let us locals help you plan the best vacation in Da Nang. Who else know our city better than us?
                         </div>
                         <div class="button">
-                            <a href="#" class="but">
-                                BOOK NOW
+                            <a href="https://www.facebook.com/danangfreewalkingtour/" class="but">
+                                EMAIL US
                                 <i class="fas fa-chevron-right"></i>
                             </a>
                         </div>
@@ -354,16 +354,16 @@
                         <div>Da Nang - Viet Nam</div>
                     </div>
                     <div class="video-pre-view">
-                        <a href="">
+                        <a>
                             <img src="assets/images/video-slide7.jpg" alt="">
                         </a>
-                        <a href="">
+                        <a>
                             <img src="assets/images/video-slide1.jpg" alt="">
                         </a>
-                        <a href="">
+                        <a>
                             <img src="assets/images/video-slide3.jpg" alt="">
                         </a>
-                        <a href="">
+                        <a>
                             <img src="assets/images/video-slide4.jpg" alt="">
                         </a>
                     </div>
@@ -386,7 +386,7 @@
                     </div>
                     <div class="about-but">
                         <div class="button">
-                            <a href="" class="but">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rOXw8bf2o3eEmZDAdsreEgfvpUTGzeu1CDVgC7ufgInIgw/viewform" class="but">
                                 BOOK NOW
                                 <i class="fas fa-chevron-right"></i>
                             </a>
@@ -963,13 +963,13 @@
                     Where to stay
                 </div>
             </div>
-            <div class="owl-carousel loop">
+            <div class="owl-carousel loop things-carousel">
             @foreach($recoms as $recom)    
                 <div class="card-row">
-                    <a href="">
+                    <a href="{{url('/recoms/' .$recom->id)}}">
                         <div class="things-card">
                             <div class="things-img">
-                                <img src="assets/images/ThingsToDo/{{$recom->img}}" id="img{{substr($recom->id, -1, 1) - 1}}" alt="">
+                                <img class="thingsImage" src="assets/images/ThingsToDo/{{$recom->img}}" id="img{{substr($recom->id, -1, 1) - 1}}" alt="">
                             </div>
                             <div class="things-detail" id="title{{substr($recom->id, -1, 1) - 1}}">{{$recom->title}}</div>
                             <div class="things-address" id="address{{substr($recom->id, -1, 1) - 1}}">{{$recom->address}}</div>
@@ -982,7 +982,7 @@
                                     <i class="fas fa-star"></i>
                                 </div>
                                 <div class="things-more">
-                                    <a href="">
+                                    <a>
                                         <div class="more">
                                             <i class="fas fa-chevron-right"></i>See more</div>
                                     </a>
@@ -996,26 +996,26 @@
         </section>
         <section class="package">
             <div class="package-title">
-                PACKAGES FOR YOU:
+                PACKAGES FOR YOU
             </div>
             <div class="package-wrap">
                 <div class="package-item">
-                    <a href="">
+                    <a>
                         <img src="assets/images/DNFWT Basic Package 1.jpg" alt="">
                     </a>
                 </div>
                 <div class="package-item">
-                    <a href="">
+                    <a>
                         <img src="assets/images/DNFWT Basic Package 2.jpg" alt="">
                     </a>
                 </div>
                 <div class="package-item">
-                    <a href="">
+                    <a>
                         <img src="assets/images/DNFWT Basic Package 3.jpg" alt="">
                     </a>
                 </div>
                 <div class="package-item">
-                    <a href="">
+                    <a>
                         <img src="assets/images/DNFWT Basic Package 4.jpg" alt="">
                     </a>
                 </div>
@@ -1026,10 +1026,10 @@
                 LATEST NEWS
             </h1>
             <div class="news">
-                <div class="owl-carousel loop">    
+                <div class="owl-carousel loop news-carousel">    
                 @foreach ($news as $new)    
                     <div class="news-post" id="post{{$new->id}}">
-                        <a href="">
+                        <a href="{{url('/news/' .$new->id)}}">
                             <img src="assets/images/{{$new->img}}" alt="">
                             <div class="news-date">
                                 <span>Des</span>
@@ -1054,7 +1054,7 @@
                         <i class="fas fa-chevron-right"></i>ROUTE</a>
                     <a href="#tours">
                         <i class="fas fa-chevron-right"></i>TOURS</a>
-                    <a href=".about">
+                    <a href="#about">
                         <i class="fas fa-chevron-right"></i>ABOUT US</a>
                     <a href="#galleries">
                         <i class="fas fa-chevron-right"></i>GALLERIES</a>
@@ -1100,6 +1100,7 @@
             url:'recoms/ajax/' + id,
             success:function(response) {
               console.log(response);
+                $(".card-row").css('display','none !important');
                 <?php for($i=0;$i<=9;$i++): ?>
                 // var img<?php echo $i ?> = document.getElementById('img<?php echo $i ?>');
                 // var title<?php echo $i ?> = document.getElementById('title<?php echo $i ?>');
