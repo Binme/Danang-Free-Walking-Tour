@@ -64,6 +64,11 @@ Route::group(['prefix' => 'admin','middleware' => 'isAdmin'], function () {
         Route::get('/create',function(){
             return redirect()->back();
         });
+
+        Route::get('/edit/{id}','NewController@viewNews');
+        Route::post('/edit','NewController@editNews')->name('edit-news');
+
+        Route::get('/delete/{id}', 'NewController@deletePost');
     });
     Route::group(['prefix' => 'service'], function() {
 

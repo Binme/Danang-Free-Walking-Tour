@@ -8,7 +8,7 @@
                             <li>{{ $error }}</li>
                         @endforeach
                     </ul>
-                @endif
+                @endif    
             @if((Auth::user()->role == 2) || (Auth::user()->role == 1))
             <div class="row">
               <div class="col-md-12">
@@ -21,8 +21,7 @@
               </div>
               </div>
             </div>
-            @else
-            @endif  
+    
             <div class="form-group col-md-12 hello" id="id03">
             <form method="post" enctype="multipart/form-data" action="{{route('create-news')}}">
             <input type="hidden" name="_token" value="{{csrf_token()}}">  
@@ -39,6 +38,8 @@
             </div>
           </form>  
           </div>
+          @else
+          @endif
             <div class="card">
                     <table class="table table-responsive-sm table-hover table-outline mb-0">
                       <thead class="thead-light">
@@ -53,21 +54,21 @@
                         </tr>
                       </thead>
                       <tbody>
-                        @foreach($news as $new)
+                        @foreach($posts as $post)
                         <tr>
                           <td class="text-center">
                             <div class="avatar">
-                              <img src="../../assets/images/{{$new->img}}" class="img-avatar" alt="admin@bootstrapmaster.com">
+                              <img src="../../assets/images/posts/images/{{$post->img}}" class="img-avatar" alt="admin@bootstrapmaster.com">
                               <span class="avatar-status badge-warning"></span>
                             </div>
                           </td>
                           <td>
                             <div style="overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;width: 150px;">{{$new->title}}</div>
+    white-space: nowrap;width: 150px;">{{$post->title}}</div>
                             <div class="small text-muted">
 
-                              <span>Author</span> | {{$new->author}}
+                              <span>Author</span> | {{$post->author}}
                             </div>
                           </td>
                           <td>
@@ -97,8 +98,8 @@
                                       @break
 
                                   @case(2)
-                                      <a class="btn btn-primary" href="" role="button">Detail</a>
-                                      <a class="btn btn-danger" href="" role="button">Delete</a>
+                                      <a class="btn btn-primary" href="{{url('/admin/news/edit/' .$post->id)}}" role="button">Detail</a>
+                                      <a class="btn btn-danger" href="{{url('/admin/news/delete/' .$post->id)}}" role="button">Delete</a>
                                       @break    
 
                                   @default
@@ -110,7 +111,7 @@
                       </tbody>
                     </table>
                   </div>
-                  {{ $news->links() }}
+                  {{ $posts->links() }}
                 </div>
               </div>
               <!--/.col-->

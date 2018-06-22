@@ -1030,7 +1030,7 @@
                 @foreach ($news as $new)    
                     <div class="news-post" id="post{{$new->id}}">
                         <a href="{{url('/news/' .$new->id)}}">
-                            <img src="assets/images/{{$new->img}}" alt="">
+                            <img src="assets/images/posts/images/{{$new->img}}" alt="">
                             <div class="news-date">
                                 <span>Des</span>
                                 <h3>14</h3>
