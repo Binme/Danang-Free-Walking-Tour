@@ -225,7 +225,9 @@
       justify-content: space-between; }
       main .about .wrap .about-video .video-title {
         font-weight: 700;
-        font-size: 45px; }
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center; }
       main .about .wrap .about-video .video-watch-here div {
         padding: 2px 0;
         color: white;
@@ -252,8 +254,10 @@
       main .about .wrap .about-text .about-title {
         font-weight: 700;
         color: white;
-        font-size: 25px;
-        margin-top: 10px; }
+        font-size: 30px;
+        margin-top: 10px;
+        line-height: 35px;
+        text-align: center; }
       main .about .wrap .about-text .description-text {
         text-align: left;
         margin-top: 5px;
@@ -296,13 +300,17 @@
       main .about .wrap .about-calc .about-number .description-text {
         font-weight: 600; }
   main .galleries h1 {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 700;
     text-align: center; }
   main .thingstodo {
     background: #f1f1f1;
-    padding: 15px calc(2%); }
+    padding: 15px calc(5%); }
     main .thingstodo .things-title {
-      font-size: 20px;
+      font-size: 30px;
       font-weight: 700;
+      line-height: 35px;
       padding-bottom: 10px;
       border-bottom: #f6d014 5px solid;
       margin-bottom: 15px; }
@@ -346,7 +354,7 @@
       main .thingstodo .things-card .things-rated {
         display: none; }
   main .package {
-    padding: 0px calc(8%); }
+    padding: 0px 5%; }
     main .package .package-title {
       font-weight: 700;
       font-size: 30px;
@@ -354,9 +362,9 @@
       border-bottom: #f6d014 5px solid;
       margin-bottom: 15px; }
     main .package .package-wrap {
+      padding: 0px calc(8%);
       display: flex;
       flex-wrap: wrap;
-      padding: 0 calc(1%);
       justify-content: space-between; }
       main .package .package-wrap .package-item {
         width: 48%;
@@ -367,8 +375,9 @@
     margin-top: 0; }
     main .latest-news .news-title {
       margin-bottom: 18px;
-      font-size: 22px;
+      font-size: 30px;
       font-weight: 700;
+      line-height: 35px;
       text-align: center; }
     main .latest-news .news {
       padding-left: calc(5%);
@@ -448,4 +457,10 @@
 
   section {
     position: relative;
-    margin-top: 20px; } }
+    margin-top: 5px; }
+
+  .big-title {
+    margin-bottom: 0 !important; }
+
+  .short-border {
+    margin-top: 0 !important; } }

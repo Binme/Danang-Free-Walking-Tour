@@ -118,7 +118,7 @@
         background: #f6d014;
         padding: 8px 0; }
         main .slide .slide-text div a {
-          color: white;
+          color: white !important;
           font-weight: 500;
           font-size: 16px; }
           main .slide .slide-text div a svg {
@@ -261,7 +261,9 @@
       justify-content: space-between; }
       main .about .wrap .about-video .video-title {
         font-weight: 700;
-        font-size: 45px; }
+        font-size: 40px;
+        letter-spacing: 2px;
+        line-height: 48px; }
       main .about .wrap .about-video .video-watch-here div {
         padding: 2px 0;
         color: white;
@@ -286,7 +288,9 @@
       main .about .wrap .about-text .about-title {
         font-weight: 700;
         color: white;
-        font-size: 45px; }
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 2px; }
       main .about .wrap .about-text .description-text {
         text-align: left;
         margin-top: 25px;
@@ -332,16 +336,21 @@
           color: white; }
         main .about .wrap .about-calc .about-number .description-text {
           font-weight: 600; }
+  main .galleries h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px; }
   main .galleries img {
     width: 100%;
     height: 100%; }
   main .thingstodo {
     background: #f1f1f1;
-    padding: 25px calc(5%); }
+    padding: 35px calc(5%); }
     main .thingstodo .things-title {
-      font-size: 30px;
+      font-size: 40px;
       font-weight: 700;
-      padding-bottom: 10px;
+      line-height: 48px;
+      padding-bottom: 5px;
       border-bottom: #f6d014 5px solid;
       margin-bottom: 15px; }
     main .thingstodo .things-catalog {
@@ -417,11 +426,13 @@
           main .thingstodo .things-card .things-rated .things-more .more {
             font-size: 16px; }
   main .package {
-    padding: 20px calc(8%); }
+    padding: 0px calc(5%); }
     main .package .package-title {
       font-weight: 700;
-      font-size: 30px;
-      padding-bottom: 10px;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 2px;
+      padding-bottom: 5px;
       border-bottom: #f6d014 5px solid;
       margin-bottom: 15px; }
     main .package .package-wrap {
@@ -434,7 +445,8 @@
         main .package .package-wrap .package-item img {
           width: 100%; }
   main .latest-news .news-title {
-    margin-bottom: 32px;
+    margin-bottom: 40px;
+    line-height: 48px;
     font-weight: 700;
     text-align: center; }
   main .latest-news .news {

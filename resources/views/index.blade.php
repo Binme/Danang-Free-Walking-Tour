@@ -996,7 +996,7 @@
         </section>
         <section class="package">
             <div class="package-title">
-                PACKAGES FOR YOU:
+                PACKAGES FOR YOU
             </div>
             <div class="package-wrap">
                 <div class="package-item">

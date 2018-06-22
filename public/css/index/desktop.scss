@@ -148,7 +148,7 @@
                     background: #f6d014;
                     padding: 8px 0;
                     a {
-                        color: white;
+                        color: white !important;
                         font-weight: 500;
                         font-size: 16px;
                         svg {
@@ -329,7 +329,9 @@
                     justify-content: space-between;
                     .video-title {
                         font-weight: 700;
-                        font-size: 45px;
+                        font-size: 40px;
+                        letter-spacing: 2px;
+                        line-height: 48px;
                     }
                     .video-watch-here {
                         div {
@@ -363,7 +365,9 @@
                     .about-title {
                         font-weight: 700;
                         color: white;
-                        font-size: 45px;
+                        font-size: 40px;
+                        line-height: 48px;
+                        letter-spacing: 2px;
                     }
                     .description-text {
                         text-align: left;
@@ -426,6 +430,11 @@
             }
         }
         .galleries {
+            h1{
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 48px;
+            }
             img {
                 width: 100%;
                 height: 100%;
@@ -433,11 +442,12 @@
         }
         .thingstodo {
             background: #f1f1f1;
-            padding: 25px calc(5%);
+            padding: 35px calc(5%);
             .things-title {
-                font-size: 30px;
+                font-size: 40px;
                 font-weight: 700;
-                padding-bottom: 10px;
+                line-height: 48px;
+                padding-bottom: 5px;
                 border-bottom: #f6d014 5px solid;
                 margin-bottom: 15px;
             }
@@ -533,11 +543,13 @@
             }
         }
         .package {
-            padding: 20px calc(8%);
+            padding: 0px calc(5%);
             .package-title {
                 font-weight: 700;
-                font-size: 30px;
-                padding-bottom: 10px;
+                font-size: 40px;
+                line-height: 48px;
+                letter-spacing: 2px;
+                padding-bottom: 5px;
                 border-bottom: #f6d014 5px solid;
                 margin-bottom: 15px;
             }
@@ -556,7 +568,8 @@
         }
         .latest-news {
             .news-title {
-                margin-bottom: 32px;
+                margin-bottom: 40px;
+                line-height: 48px;
                 font-weight: 700;
                 text-align: center;
             }
