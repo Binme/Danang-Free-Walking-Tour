@@ -15,6 +15,9 @@ Route::get('/', 'HomeController@index');
 Route::get('/news/{id}','New_detailController@getNewsById');
 Route::get('/recoms/{id}','Recom_detailController@index');
 Route::post('/paypal','PaymentController@payWithpaypal');
+
+Route::get('/recoms/ajax/{filter}','RecomController@ajaxRecoms');
+
 Route::get('/admin',function(){
 	return view('admin/index');
 });
@@ -65,7 +68,10 @@ Route::group(['prefix' => 'admin','middleware' => 'isAdmin'], function () {
         // Show list news
         Route::get('/', 'NewController@index');
     
-        Route::get('/create','NewController@createNews');
+        Route::post('/create','NewController@xuLyUpLoad')->name('create-news');
+        Route::get('/create',function(){
+            return redirect()->back();
+        });
     });
     Route::group(['prefix' => 'service'], function() {
 

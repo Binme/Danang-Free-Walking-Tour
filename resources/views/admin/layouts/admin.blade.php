@@ -134,10 +134,24 @@
           if (event.target == hello) {
             hello.style.display = "none";
           }   
-        var hello_1 = document.getElementById('1and1');
-          if (event.target == hello_1) {
+        var j = 1;
+        for (j = 1; j <= 4; j++){
+          var img = document.getElementById('img' + j);
+          if (event.target == str) {
             hello.style.display = "none";
-          }          
+          }
+          var str = document.getElementById('str' + j);
+          if (event.target == str) {
+            hello.style.display = "none";
+          }
+          var i = 1;
+          for (i = 1; i <= 20; i++){
+            var line = document.getElementById(j+ 'and' + i);
+            if (event.target == line) {
+              hello.style.display = "none";
+            }
+          }
+        }           
       }
     </script>
   </body>

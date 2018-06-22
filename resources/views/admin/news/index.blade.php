@@ -2,7 +2,14 @@
 @section('content')
         <div class="container-fluid">
           <div class="animated fadeIn">
-              @if((Auth::user()->role == 2) || (Auth::user()->role == 1))
+            @if ($errors->any())
+                    <ul class="error-form">
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                @endif
+            @if((Auth::user()->role == 2) || (Auth::user()->role == 1))
             <div class="row">
               <div class="col-md-12">
               <div class="card">
@@ -27,40 +34,48 @@
                     <span onclick="document.getElementById('id03').style.display='none';" class="close" title="Close Modal">&times;</span>
                   </div>
                   <div class="card-body">
-                    <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                    <form action="{{route('create-news')}}" method="POST" class="form-horizontal">
+                      <input type="hidden" name="_token" value="{{csrf_token()}}">
                       <div class="form-group row">
                         <label class="col-md-3 col-form-label" for="text-input">Title:</label>
                         <div class="col-md-9">
-                          <input type="text" id="text-input" name="text-input" class="form-control" value="Gia Bao">
+                          <input type="text" id="text-input" name="title" class="form-control">
                           <span class="help-block">Please enter your title</span>
                         </div>
                       </div>
                       <div class="form-group row">
                         <label class="col-md-3 col-form-label" for="text-input">Author:</label>
                         <div class="col-md-9">
-                          <input type="text" id="text-input" name="text-input" class="form-control" value="Gia Bao">
+                          <input type="text" id="text-input" name="author" class="form-control">
                           <span class="help-block">Please enter your name </span>
                         </div>
                       </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="file-input">Picture 1:</label>
+                    @for ($j=1;$j<=4;$j++)  
+                      <div class="form-group row hello" id="img{{$j}}">
+                        <label class="col-md-3 col-form-label" for="file-input">Picture {{$j}}:</label>
                         <div class="col-md-9">
-                          <input type="file" id="file-multiple-input" name="file-multiple-input" multiple>
+                          <input type="file" id="img_{{$j}}" name="img_{{$j}}">
+                          <span onclick="document.getElementById('img{{$j}}').style.display='none';" class="close" title="Close Modal" style="color: tomato">&times;</span>
                         </div>
                       </div>
-                      <div class="form-group row hello" id="1and1">
-                        <label class="col-md-3 col-form-label" for="text-input">Strong text 1:</label>
+                      <div class="form-group row hello" id="str{{$j}}">
+                        <label class="col-md-3 col-form-label" for="text-input">Title text {{$j}}:</label>
                         <div class="col-md-9">
-                          <input type="text" id="text-input" name="text-input" class="form-control" value="Gia Bao">
+                          <input type="text" id="text-input" name="strong_text_{{$j}}" class="form-control">
                           <span class="help-block">Please enter your strong text</span>
+                          <span onclick="document.getElementById('str{{$j}}').style.display='none';" class="close" title="Close Modal" style="color: tomato">&times;</span>
                         </div>
                       </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="textarea-input">Line 1:</label>
+                    @for ($i=1;$i<=20;$i++)  
+                      <div class="form-group row hello" id="{{$j}}and{{$i}}">
+                        <label class="col-md-3 col-form-label" for="textarea-input">Line {{$j}}-{{$i}}:</label>
                         <div class="col-md-9">
-                          <textarea id="textarea-input" name="textarea-input" rows="2" class="form-control" placeholder="Content.."></textarea>
+                          <textarea id="textarea-input" name="text_{{$j}}_{{$i}}" rows="2" class="form-control" placeholder="Content.."></textarea>
+                          <span onclick="document.getElementById('{{$j}}and{{$i}}').style.display='none';" class="close" title="Close Modal" style="color: tomato">&times;</span>
                         </div>
                       </div>
+                    @endfor
+                    @endfor  
                   </div>
                   <div class="card-footer">
                     <button type="submit" class="btn btn-sm btn-primary">
@@ -75,32 +90,14 @@
              
               <div class="col-md-12">
               <div class="card">
-                <div class="card-header">
-                  <a class="btn btn-warning" role="button">Img_1</a>
-                  <a class="btn btn-danger" role="button">Str_1</a>
+                @for($j=1;$j<=4;$j++)
+                <div class="card-header">  
+                  <a class="btn btn-warning" role="button" onclick="myService(document.getElementById('img{{$j}}').style.display='block')">Img_{{$j}}</a>
+                  <a class="btn btn-danger" role="button" onclick="myService(document.getElementById('str{{$j}}').style.display='block')">Tit_{{$j}}</a>
                 @for($i=1;$i<=20;$i++)  
-                  <a class="btn btn-primary" role="button" onclick="myService(document.getElementById('1and{{i}}').style.display='block')">{{$i}}</a>
+                  <a class="btn btn-primary" role="button" onclick="myService(document.getElementById('{{$j}}and{{$i}}').style.display='block')">{{$i}}</a>
                 @endfor
                 </div>
-                <div class="card-header">
-                  <a class="btn btn-warning" role="button">Img_2</a>
-                  <a class="btn btn-danger" role="button">Str_2</a>
-                @for($i=1;$i<=20;$i++)  
-                  <a class="btn btn-primary" role="button">{{$i}}</a>
-                @endfor
-                </div>
-                <div class="card-header">
-                  <a class="btn btn-warning" role="button">Img_3</a>
-                  <a class="btn btn-danger" role="button">Str_3</a>
-                @for($i=1;$i<=20;$i++)  
-                  <a class="btn btn-primary" role="button">{{$i}}</a>
-                @endfor
-                </div>
-                <div class="card-header">
-                  <a class="btn btn-warning" role="button">Img_4</a>
-                  <a class="btn btn-danger" role="button">Str_4</a>
-                @for($i=1;$i<=20;$i++)  
-                  <a class="btn btn-primary" role="button">{{$i}}</a>
                 @endfor
                 </div>
               </div>

@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     public function index(){
     	$news = DB::table('news')->get();
-    	$recoms = Recom::get();
+    	$recoms = Recom::take(10)->get();
     	return view('index',compact('news','recoms'));
     }
     public function admin(){
