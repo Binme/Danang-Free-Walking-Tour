@@ -15,94 +15,30 @@
               <div class="card">
                 <div class="card-header">
                   Create Recom
-                  <a class="btn btn-primary" role="button" style="float: right;" onclick="myService(document.getElementById('id03').style.display='block')">Create</a>
+                  <a class="btn btn-primary" role="button" style="float: right;" onclick="myService(document.getElementById('id03').style.display='block')">Show</a>
+                  <a class="btn btn-warning" role="button" style="float: right;margin-right: 10px" onclick="myService(document.getElementById('id03').style.display='none')">Hide</a>
                 </div>
               </div>
               </div>
             </div>
             @else
-            @endif
-          <div class="row hello" id="id03">
-            <div class="col-md-12">
-          <div class="animated fadeIn">
-              <div class="row">
-                <div class="col-md-12">  
-                  <div class="card">
-                  <div class="card-header">
-                    <strong>Create news</strong>
-                    
-                    <span onclick="document.getElementById('id03').style.display='none';" class="close" title="Close Modal">&times;</span>
-                  </div>
-                  <div class="card-body">
-                    <form action="{{route('create-news')}}" method="POST" class="form-horizontal">
-                      <input type="hidden" name="_token" value="{{csrf_token()}}">
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="text-input">Title:</label>
-                        <div class="col-md-9">
-                          <input type="text" id="text-input" name="title" class="form-control">
-                          <span class="help-block">Please enter your title</span>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="text-input">Author:</label>
-                        <div class="col-md-9">
-                          <input type="text" id="text-input" name="author" class="form-control">
-                          <span class="help-block">Please enter your name </span>
-                        </div>
-                      </div>
-                    @for ($j=1;$j<=4;$j++)  
-                      <div class="form-group row hello" id="img{{$j}}">
-                        <label class="col-md-3 col-form-label" for="file-input">Picture {{$j}}:</label>
-                        <div class="col-md-9">
-                          <input type="file" id="img_{{$j}}" name="img_{{$j}}">
-                          <span onclick="document.getElementById('img{{$j}}').style.display='none';" class="close" title="Close Modal" style="color: tomato">&times;</span>
-                        </div>
-                      </div>
-                      <div class="form-group row hello" id="str{{$j}}">
-                        <label class="col-md-3 col-form-label" for="text-input">Title text {{$j}}:</label>
-                        <div class="col-md-9">
-                          <input type="text" id="text-input" name="strong_text_{{$j}}" class="form-control">
-                          <span class="help-block">Please enter your strong text</span>
-                          <span onclick="document.getElementById('str{{$j}}').style.display='none';" class="close" title="Close Modal" style="color: tomato">&times;</span>
-                        </div>
-                      </div>
-                    @for ($i=1;$i<=20;$i++)  
-                      <div class="form-group row hello" id="{{$j}}and{{$i}}">
-                        <label class="col-md-3 col-form-label" for="textarea-input">Line {{$j}}-{{$i}}:</label>
-                        <div class="col-md-9">
-                          <textarea id="textarea-input" name="text_{{$j}}_{{$i}}" rows="2" class="form-control" placeholder="Content.."></textarea>
-                          <span onclick="document.getElementById('{{$j}}and{{$i}}').style.display='none';" class="close" title="Close Modal" style="color: tomato">&times;</span>
-                        </div>
-                      </div>
-                    @endfor
-                    @endfor  
-                  </div>
-                  <div class="card-footer">
-                    <button type="submit" class="btn btn-sm btn-primary">
-                      <i class="fas fa-sign-in-alt"></i> Submit</button>
-                  </div>
-                  </form>
-                </div>
-                </div>
-              </div>  
-              </div>
+            @endif  
+            <div class="form-group col-md-12 hello" id="id03">
+            <form method="post" enctype="multipart/form-data" action="{{route('create-news')}}">
+            <input type="hidden" name="_token" value="{{csrf_token()}}">  
+              <label class="col-md-3 col-form-label" for="text-input">Image:</label>
+            <input type="file" id="text-input" name="img" class="form-control"><br>
+              <label class="col-md-3 col-form-label" for="text-input">Title:</label>
+            <input type="text" id="text-input" name="title" class="form-control" required=""><br>
+              <label class="col-md-3 col-form-label" for="text-input">Author:</label>
+            <input type="text" id="text-input" name="author" class="form-control" required=""><br>
+          <label>Content</label>
+          <textarea name="body" class="form-control " id="editor1" required=""></textarea>
+            <div class="card-header">            
+              <button class="btn btn-primary" type="submit">Submit</button>
             </div>
-             
-              <div class="col-md-12">
-              <div class="card">
-                @for($j=1;$j<=4;$j++)
-                <div class="card-header">  
-                  <a class="btn btn-warning" role="button" onclick="myService(document.getElementById('img{{$j}}').style.display='block')">Img_{{$j}}</a>
-                  <a class="btn btn-danger" role="button" onclick="myService(document.getElementById('str{{$j}}').style.display='block')">Tit_{{$j}}</a>
-                @for($i=1;$i<=20;$i++)  
-                  <a class="btn btn-primary" role="button" onclick="myService(document.getElementById('{{$j}}and{{$i}}').style.display='block')">{{$i}}</a>
-                @endfor
-                </div>
-                @endfor
-                </div>
-              </div>
-              </div>
-            </div>
+          </form>  
+          </div>
             <div class="card">
                     <table class="table table-responsive-sm table-hover table-outline mb-0">
                       <thead class="thead-light">
@@ -182,4 +118,15 @@
             <!--/.row-->
           </div>
         </div>
+        <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+    <script>
+        CKEDITOR.replace( 'editor1', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
+        } );
+    </script>
 @endsection

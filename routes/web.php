@@ -14,23 +14,15 @@
 Route::get('/', 'HomeController@index');
 Route::get('/news/{id}','New_detailController@getNewsById');
 Route::get('/recoms/{id}','Recom_detailController@index');
+Route::get('/recoms/ajax/{filter}','RecomController@ajaxRecoms');
 Route::post('/paypal','PaymentController@payWithpaypal');
 
-Route::get('/recoms/ajax/{filter}','RecomController@ajaxRecoms');
-
-Route::get('/admin',function(){
-	return view('admin/index');
-});
-Route::get('/home',function(){
-    return view('home');
-});
 
 Route::get('/view/login','UserController@viewLogin');
 Route::post('/login','UserController@login')->name('login');
 Route::get('/login',function(){
     return redirect('/');
 });
-
 Route::group(['prefix' => 'admin','middleware' => 'isAdmin'], function () {
 //    Auth::routes();
 
@@ -82,6 +74,7 @@ Route::group(['prefix' => 'admin','middleware' => 'isAdmin'], function () {
     });
 
 });
+
 
 
 
