@@ -108,7 +108,7 @@
                         <tr>
                           <td class="text-center">
                             <div class="avatar">
-                              <img src="../assets/images/Dog/26_1_.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                              <img src="{{ asset('../assets/images/Avatar/' .$user->img) }}" class="img-avatar" alt="admin@bootstrapmaster.com">
                               <span class="avatar-status badge-danger"></span>
                             </div>
                           </td>
@@ -157,20 +157,20 @@
                             @switch(Auth::user()->role)
                                   @case(0)
                                     @if(Auth::user()->id == $user->id)
-                                      <a class="btn btn-primary" onclick="myService(document.getElementById('id01').style.display='block')" role="button">Edit</a>
+                                      <a class="btn btn-primary" href="{{url('/admin/user/view/edit/' .$user->id)}}" role="button">Edit</a>
                                     @else
                                     @endif   
                                       @break
 
                                   @case(1)
                                     @if(Auth::user()->id == $user->id)
-                                      <a class="btn btn-primary" role="button" onclick="myService(document.getElementById('id01').style.display='block')">Edit</a>
+                                      <a class="btn btn-primary" role="button" href="{{url('/admin/user/view/edit/' .$user->id)}}">Edit</a>
                                     @else
                                     @endif  
                                       @break
 
                                   @case(2)
-                                      <a class="btn btn-primary" role="button" onclick="myService(document.getElementById('id01').style.display='block')">Detail</a>
+                                      <a class="btn btn-primary" role="button" href="{{url('/admin/user/view/edit/' .$user->id)}}">Edit</a>
                                       <a class="btn btn-danger" href="{{url('/admin/user/delete/' .$user->id)}}" role="button">Delete</a>
                                       @break    
 
@@ -186,90 +186,6 @@
                 </div>
               </div>
               <!--/.col-->
-              <div class="container-fluid modal" id="id01">
-          <div class="animated fadeIn">
-              <div class="row" style="margin-top: 5%">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">  
-                  <div class="card">
-                  <div class="card-header">
-                    <strong>Edit user</strong>
-                    Detail
-                    <span onclick="document.getElementById('id01').style.display='none';" class="close" title="Close Modal">&times;</span>
-                  </div>
-                  <div class="card-body">
-                    <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="disabled-input">Email:</label>
-                        <div class="col-md-9">
-                          <input type="text" id="disabled-input" name="disabled-input" class="form-control" placeholder="giabao2013dn@gmail.com" disabled>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="text-input">Username:</label>
-                        <div class="col-md-9">
-                          <input type="text" id="text-input" name="text-input" class="form-control" value="Gia Bao">
-                          <span class="help-block">Please enter your name</span>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label">Age:</label>
-                        <div class="col-md-9 col-form-label">
-                          <div class="form-check form-check-inline mr-1">
-                            <input class="form-check-input" type="radio" id="inline-radio1" value="option1" name="inline-radios">
-                            <label class="form-check-label" for="inline-radio1">Male</label>
-                          </div>
-                          <div class="form-check form-check-inline mr-1">
-                            <input class="form-check-input" type="radio" id="inline-radio2" value="option2" name="inline-radios">
-                            <label class="form-check-label" for="inline-radio2">Female</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="text-input">Phone:</label>
-                        <div class="col-md-9">
-                          <input type="text" id="text-input" name="text-input" class="form-control" placeholder="asd">
-                          <span class="help-block">Please enter your phone</span>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="text-input">Address:</label>
-                        <div class="col-md-9">
-                          <input type="text" id="text-input" name="text-input" class="form-control" placeholder="asd">
-                          <span class="help-block">Please enter your address</span>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text">New Password</span>
-                          </div>
-                          <input type="password" id="password3" name="password3" class="form-control">
-                          <div class="input-group-append">
-                            <span class="input-group-text">
-                              <i class="fa fa-asterisk"></i>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="file-input">Change avatar</label>
-                        <div class="col-md-9">
-                          <input type="file" id="file-input" name="file-input">
-                        </div>
-                      </div>
-                  </div>
-                  <div class="card-footer">
-                    <button type="submit" class="btn btn-sm btn-primary">
-                      <i class="fas fa-sign-in-alt"></i> Submit</button>
-                  </div>
-                  </form>
-                </div>
-                </div>
-              </div>  
-              </div>
-            </div>
-          </div>
           @if(Auth::user()->role == 2)
           <div class="container-fluid modal" id="id02">
           <div class="animated fadeIn">
@@ -283,26 +199,34 @@
                     <span onclick="document.getElementById('id02').style.display='none';" class="close" title="Close Modal">&times;</span>
                   </div>
                   <div class="card-body">
-                    <form action="{{route('create-user')}}" method="POST" class="form-horizontal">
+                    <form action="{{route('create-user')}}" enctype="multipart/form-data" method="POST" class="form-horizontal">
                       <input type="hidden" name="_token" value="{{csrf_token()}}">
                       <div class="form-group row">
-                        <label class="col-md-3 col-form-label">Name:</label>
+                        <label class="col-md-3 col-form-label" for="file-input">Change avatar: <img src="{{ asset('assets/images/Avatar/26_1_.jpg') }}" class="img-avatar" width="50" height="40"></label>
                         <div class="col-md-9">
-                          <input type="text" name="name" class="form-control">
+                          <input type="file" id="text-input" name="img" class="form-control">
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label class="col-md-3 col-form-label">Email:</label>
+                        <label class="col-md-3 col-form-label" for="text-input">Email:</label>
                         <div class="col-md-9">
-                          <input type="email" name="email" class="form-control">
+                          <input type="email" id="text-input" name="email" class="form-control" required>
+                          <span class="help-block">Please enter your email</span>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="text-input">Username:</label>
+                        <div class="col-md-9">
+                          <input type="text" id="text-input" name="name" class="form-control" required>
+                          <span class="help-block">Please enter your name</span>
                         </div>
                       </div>
                       <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Password</span>
+                            <span class="input-group-text">New Password</span>
                           </div>
-                          <input type="password" id="password3" name="password" class="form-control">
+                          <input type="password" id="password3" name="password" class="form-control" required>
                           <div class="input-group-append">
                             <span class="input-group-text">
                               <i class="fa fa-asterisk"></i>
@@ -311,36 +235,29 @@
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label class="col-md-3 col-form-label">Age:</label>
-                        <div class="col-md-9 col-form-label">
-                          <div class="form-check form-check-inline mr-1">
-                            <input class="form-check-input" type="radio" id="inline-radio1" value="male" name="gender">
-                            <label class="form-check-label" for="inline-radio1">Male</label>
-                          </div>
-                          <div class="form-check form-check-inline mr-1">
-                            <input class="form-check-input" type="radio" id="inline-radio2" value="female" name="gender">
-                            <label class="form-check-label" for="inline-radio2">Female</label>
-                          </div>
+                        <label class="col-md-3 col-form-label" for="select1">Gender:</label>
+                        <div class="col-md-9">
+                          <select id="select1" name="gender" class="form-control">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                          </select>
                         </div>
                       </div>
                       <div class="form-group row">
                         <label class="col-md-3 col-form-label" for="text-input">Phone:</label>
                         <div class="col-md-9">
                           <input type="text" id="text-input" name="phone" class="form-control">
+                          <span class="help-block">Please enter your phone</span>
                         </div>
                       </div>
                       <div class="form-group row">
                         <label class="col-md-3 col-form-label" for="text-input">Address:</label>
                         <div class="col-md-9">
                           <input type="text" id="text-input" name="address" class="form-control">
+                          <span class="help-block">Please enter your address</span>
                         </div>
                       </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="file-input">Change avatar</label>
-                        <div class="col-md-9">
-                          <input type="file" id="file-input" name="file-input">
-                        </div>
-                      </div>
+                    @if(Auth::user()->role == 2)  
                       <div class="form-group row">
                         <label class="col-md-3 col-form-label" for="select1">Position</label>
                         <div class="col-md-9">
@@ -351,6 +268,7 @@
                           </select>
                         </div>
                       </div>
+                    @endif 
                   </div>
                   <div class="card-footer">
                     <button type="submit" class="btn btn-sm btn-primary">

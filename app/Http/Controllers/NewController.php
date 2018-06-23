@@ -22,28 +22,28 @@ class NewController extends Controller
             'img' => 'image|nullable|max:1999'
         ]);
         if($request->hasFile('img')){
-              // Get filename with the extension
-              $filenameWithExt = $request->file('img')->getClientOriginalName();
-              // Get just filename
-              $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-              // Get just ext
-              $extension = $request->file('img')->getClientOriginalExtension();
-              // Filename to store
-              $fileNameToStore= $filename.'_'.time().'.'.$extension;
-              // Upload Image
-              $path = $request->file('img')->move('assets/images/posts/images', $fileNameToStore);
-          } else {
-              $fileNameToStore = 'noimage.jpg';
-          }
-          // Create Post
-          $post = new Post;
-          $post->title = $request->input('title');
-          $post->author = $request->input('author');
-          $post->body = $request->input('body');
-          $post->img = $fileNameToStore;
-          $post->save();
+            // Get filename with the extension
+            $filenameWithExt = $request->file('img')->getClientOriginalName();
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            // Get just ext
+            $extension = $request->file('img')->getClientOriginalExtension();
+            // Filename to store
+            $fileNameToStore= $filename.'_'.time().'.'.$extension;
+            // Upload Image
+            $path = $request->file('img')->move('assets/images/posts/images', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'noimage.jpg';
+        }
+        // Create Post
+        $post = new Post;
+        $post->title = $request->input('title');
+        $post->author = $request->input('author');
+        $post->body = $request->input('body');
+        $post->img = $fileNameToStore;
+        $post->save();
 
-          return redirect()->back()->with('flash_message', 'Post Created');
+        return redirect()->back()->with('flash_message', 'Post Created');
     }
     public function deletePost($id){
       $post = Post::findOrFail($id);
@@ -76,11 +76,11 @@ class NewController extends Controller
         $path = $request->file('img')->move('assets/images/posts/images', $fileNameToStore);
         $input = array('img' => $fileNameToStore,'author' => $request->author,'author' => $request->author,'body' => $request->body);
         $post->update($input);
-        return redirect()->back()->with('flash_message', 'Post Edited');
+        return redirect('/admin/news/')->with('flash_message', 'Post Edited');
       }
       $input = array('author' => $request->author,'title' => $request->title,'body' => $request->body);
       $post->update($input);
 
-      return redirect()->back()->with('flash_message', 'Post Edited');
+      return redirect('/admin/news/')->with('flash_message', 'Post Edited');
     }
 }

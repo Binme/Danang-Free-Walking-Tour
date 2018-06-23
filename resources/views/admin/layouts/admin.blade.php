@@ -1,11 +1,4 @@
 <!DOCTYPE html>
-<!--
-* CoreUI - Free Bootstrap Admin Template
-* @version v2.0.0
-* @link https://coreui.io
-* Copyright (c) 2018 creativeLabs Łukasz Holeczek
-* Licensed under MIT (https://coreui.io/license)
--->
 
 <html lang="en">
   <head>
@@ -16,15 +9,10 @@
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
     <title>Danang Free Walking Tour</title>
-    <!-- Icons-->
-<!--     <link href="node_modules/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
-    <link href="node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
-    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet"> -->
-    <!-- Main styles for this application-->
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="{{ asset('../css/style.css') }}" rel="stylesheet">
-    <!-- <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet"> -->
+
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     <header class="app-header navbar">
@@ -33,7 +21,7 @@
       </button>
       <a class="navbar-brand" href="#">
         <img class="navbar-brand-full" src="{{ asset('../assets/images/logo.jpg') }}" width="50" height="50" alt="CoreUI Logo">
-        <img class="navbar-brand-minimized" src="{{ asset('../assets/images/Dog/26_1_.jpg') }}" width="30" height="30" alt="CoreUI Logo">
+        <img class="navbar-brand-minimized" src="{{ asset('assets/images/Dog/' .Auth::user()->img) }}" width="30" height="30" alt="CoreUI Logo">
       </a>
       <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
         <span class="navbar-toggler-icon"></span>
@@ -46,7 +34,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-            <img class="img-avatar" src="{{ asset('../assets/images/Dog/26_1_.jpg') }}" alt="admin@bootstrapmaster.com">
+            <img class="img-avatar" src="{{ asset('../assets/images/Avatar/26_1_.jpg') }}">
           </a>
         </li>
       </ul>

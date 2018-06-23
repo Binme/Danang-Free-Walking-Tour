@@ -94,7 +94,8 @@
                                       @break
 
                                   @case(1)
-                                      <a class="btn btn-primary" href="" role="button">Detail</a>  
+                                      <a class="btn btn-primary" href="{{url('/admin/news/edit/' .$post->id)}}" role="button">Detail</a>
+                                      <a class="btn btn-danger" href="{{url('/admin/news/delete/' .$post->id)}}" role="button">Delete</a>  
                                       @break
 
                                   @case(2)

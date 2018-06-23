@@ -44,8 +44,7 @@ Route::group(['prefix' => 'admin','middleware' => 'isAdmin'], function () {
         });
 
         // // Update user
-        // Route::get('/update/{id}', 'Admin\UserController@edit')->name('admin.user.edit');
-        // Route::patch('/update/{id}', 'Admin\UserController@update')->name('admin.user.update');
+        Route::post('/edit','UserController@updateUser')->name('update-user');
 
         // // Delete user
         Route::get('/delete/{id}', 'UserController@destroy')->name('delete-user');
