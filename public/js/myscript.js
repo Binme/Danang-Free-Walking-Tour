@@ -41,7 +41,7 @@ owl2.owlCarousel({
             margin:5,
         },
         600:{
-            items:2,
+            items:4.5,
         }
     }
 });
