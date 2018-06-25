@@ -947,9 +947,9 @@
                 <div class="things-but things-but-clicked" onclick="cart('eat')">
                     Where to eat
                 </div>
-                <a class="things-but" onclick="cart('drink')">
+                <div class="things-but" onclick="cart('drink')">
                     Where to drink
-                </a>
+                </div>
                 <div class="things-but" onclick="cart('relax')">
                     Where to relax
                 </div>
@@ -1102,9 +1102,9 @@
               console.log(response);
                 <?php for($i=0;$i<=9;$i++): ?>
                 $(".link<?php echo $i ?>").attr("href","http://danangfreewalkingtour.com/recoms/"+response[<?php echo $i ?>].id);    
-                $(".img<?php echo $i ?>").attr('src','assets/images/ThingsToDo/'+response[<?php echo $i ?>].img);
-                $(".title<?php echo $i ?>").html(response[<?php echo $i ?>].title);  
-                $(".address<?php echo $i ?>").html(response[<?php echo $i ?>].address);  
+                $(".img<?php echo $i ?>").fadeOut().attr('src','assets/images/ThingsToDo/'+response[<?php echo $i ?>].img).fadeIn();
+                $(".title<?php echo $i ?>").fadeOut().html(response[<?php echo $i ?>].title).fadeIn();  
+                $(".address<?php echo $i ?>").fadeOut().html(response[<?php echo $i ?>].address).fadeIn();  
                 <?php endfor; ?>
               }
           });
