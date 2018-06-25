@@ -966,13 +966,13 @@
             <div class="owl-carousel loop things-carousel">
             @foreach($recoms as $recom)    
                 <div class="card-row">
-                    <a href="{{url('/recoms/' .$recom->id)}}">
+                    <a href="{{url('/recoms/' .$recom->id)}}" class="link{{substr($recom->id, -1, 1)}}">
                         <div class="things-card">
                             <div class="things-img">
-                                <img class="thingsImage" src="assets/images/ThingsToDo/{{$recom->img}}" id="img{{substr($recom->id, -1, 1) - 1}}" alt="">
+                                <img class="thingsImage img{{substr($recom->id, -1, 1)}}" src="assets/images/ThingsToDo/{{$recom->img}}"  alt="">
                             </div>
-                            <div class="things-detail" id="title{{substr($recom->id, -1, 1) - 1}}">{{$recom->title}}</div>
-                            <div class="things-address" id="address{{substr($recom->id, -1, 1) - 1}}">{{$recom->address}}</div>
+                            <div class="things-detail title{{substr($recom->id, -1, 1)}}">{{$recom->title}}</div>
+                            <div class="things-address address{{substr($recom->id, -1, 1)}}">{{$recom->address}}</div>
                             <div class="things-rated">
                                 <div class="things-star">
                                     <i class="fas fa-star"></i>
@@ -1100,14 +1100,11 @@
             url:'recoms/ajax/' + id,
             success:function(response) {
               console.log(response);
-                $(".card-row").css('display','none !important');
                 <?php for($i=0;$i<=9;$i++): ?>
-                // var img<?php echo $i ?> = document.getElementById('img<?php echo $i ?>');
-                // var title<?php echo $i ?> = document.getElementById('title<?php echo $i ?>');
-                // var address<?php echo $i ?> = document.getElementById('address<?php echo $i ?>');
-                $("#img<?php echo $i ?>").attr('src','assets/images/ThingsToDo/'+response[<?php echo $i ?>].img);
-                $("#title<?php echo $i ?>").html(response[<?php echo $i ?>].title);  
-                $("#address<?php echo $i ?>").html(response[<?php echo $i ?>].address);  
+                $(".link<?php echo $i ?>").attr("href","http://danangfreewalkingtour.com/recoms/"+response[<?php echo $i ?>].id);    
+                $(".img<?php echo $i ?>").attr('src','assets/images/ThingsToDo/'+response[<?php echo $i ?>].img);
+                $(".title<?php echo $i ?>").html(response[<?php echo $i ?>].title);  
+                $(".address<?php echo $i ?>").html(response[<?php echo $i ?>].address);  
                 <?php endfor; ?>
               }
           });
