@@ -98,7 +98,7 @@
     }
     main {
         .slide {
-            .carousel-indicators {
+            .carousel-indicators{
                 display: none;
             }
             margin: 0;
@@ -134,7 +134,7 @@
                     border-radius: 8px;
                     background: #f6d014;
                     padding: 3px 0;
-                    a {
+                    a{  
                         color: white;
                         font-weight: 700;
                         font-size: 12px;
@@ -165,7 +165,7 @@
                 margin-right: calc(1%);
                 display: flex;
                 flex-direction: column;
-                .card-wrap {
+                .card-wrap{
                     width: 100%;
                     display: flex;
                     margin-bottom: 15px;
@@ -176,10 +176,6 @@
                         margin-right: 5px;
                         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                         transition: 0.3s all ease !important;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        align-items: center;
                         .border-here {
                             display: flex;
                             flex-direction: column;
@@ -199,21 +195,21 @@
                             }
                         }
                         .img-detail {
-                            width: 100%;
+                            margin-top: 15px;
                             img {
-                                width: 100%;
+                                width: 150px;
+                                height: 150px;
                             }
                         }
                         .detail-title {
                             margin-top: 10px;
                             font-weight: 700;
-                            font-size: 12px;
+                            font-size: 15px;
                             line-height: 17px;
                         }
                         .icon-detail {
-                            padding-left: calc(10%);
-                            padding-right: calc(10%);
-                            width: 100%;
+                            padding-left: calc(20%);
+                            padding-right: calc(20%);
                             display: flex;
                             justify-content: space-between;
                             margin-bottom: 2px;
@@ -230,7 +226,7 @@
                         }
                         .description-detail {
                             color: #777;
-                            font-size: 13px;
+                            font-size: 12px;
                             line-height: 14px;
                             letter-spacing: 1px;
                             font-weight: 400;
@@ -280,9 +276,7 @@
                     justify-content: space-between;
                     .video-title {
                         font-weight: 700;
-                        font-size: 30px;
-                        line-height: 35px;
-                        text-align: center;
+                        font-size: 45px;
                     }
                     .video-watch-here {
                         div {
@@ -318,10 +312,8 @@
                     .about-title {
                         font-weight: 700;
                         color: white;
-                        font-size: 30px;
+                        font-size: 25px;
                         margin-top: 10px;
-                        line-height: 35px;
-                        text-align: center;
                     }
                     .description-text {
                         text-align: left;
@@ -340,16 +332,15 @@
                                 border: 2px solid white;
                                 border-radius: 8px;
                                 text-align: center;
-                                font-size: 18px;
+                                font-size: 15px;
                                 font-weight: 600;
                                 padding: 15px calc(10%);
                                 background: none;
                                 color: white;
                                 transition: 0.3s;
                                 margin-bottom: 15px;
-                                width: 100%;
                                 svg {
-                                    font-size: 15px;
+                                    font-size: 10px;
                                     transform: translateY(-1px);
                                     margin-left: 5px;
                                     color: #f6d014;
@@ -381,19 +372,15 @@
         }
         .galleries {
             h1 {
-                font-size: 30px;
-                line-height: 35px;
-                font-weight: 700;
                 text-align: center;
             }
         }
         .thingstodo {
             background: #f1f1f1;
-            padding: 15px calc(5%);
+            padding: 15px calc(2%);
             .things-title {
-                font-size: 30px;
+                font-size: 20px;
                 font-weight: 700;
-                line-height: 35px;
                 padding-bottom: 10px;
                 border-bottom: #f6d014 5px solid;
                 margin-bottom: 15px;
@@ -415,15 +402,18 @@
                     background: #f6d014;
                 }
             }
-            .things-card {
+            .things-card{
                 margin: 10px 0;
                 background: white;
                 transition: 0.3s all ease;
                 border: #d6d6d6 1px solid;
-                .things-img {
+                .things-img{
                     width: 100%;
+                    img{
+                        height: 110px;
+                    }
                 }
-                .things-detail {
+                .things-detail{
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
@@ -432,7 +422,7 @@
                     font-size: 14px;
                     margin-bottom: 8px;
                 }
-                .things-address {
+                .things-address{
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
@@ -441,29 +431,29 @@
                     color: #9f9f9f;
                     margin-bottom: 8px;
                 }
-                .things-rated {
+                .things-rated{
                     display: none;
                 }
             }
         }
-        .package {
-           padding: 0px 5%;
-            .package-title {
+        .package{
+            padding: 0px calc(8%);
+            .package-title{
                 font-weight: 700;
                 font-size: 30px;
                 padding-bottom: 10px;
                 border-bottom: #f6d014 5px solid;
                 margin-bottom: 15px;
             }
-            .package-wrap {
-                padding: 0px calc(8%);
+            .package-wrap{
                 display: flex;
                 flex-wrap: wrap;
+                padding: 0 calc(1%);
                 justify-content: space-between;
-                .package-item {
+                .package-item{
                     width: 48%;
                     margin-bottom: 15px;
-                    img {
+                    img{
                         width: 100%;
                     }
                 }
@@ -473,9 +463,8 @@
             margin-top: 0;
             .news-title {
                 margin-bottom: 18px;
-                font-size: 30px;
+                font-size: 22px;
                 font-weight: 700;
-                line-height: 35px;
                 text-align: center;
             }
             .news {
@@ -488,16 +477,41 @@
                         width: 100%;
                     }
                     .news-date {
-                        display: none;
+                        position: absolute;
+                        z-index: 10;
+                        background: #f6d014;
+                        text-align: center;
+                        padding: 8px 10px;
+                        top: 0;
+                        left: 10px;
+                        color: white !important;
+                        height: 65px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        span {
+                            font-weight: 500;
+                            font-size: 12px;
+                        }
+                        h3 {
+                            font-weight: 700;
+                            font-size: 18px;
+                            margin-bottom: 0px;
+                        }
                     }
                     .path {
-                        display: none;
+                        background: #f6d014;
+                        position: absolute;
+                        left: 10px;
+                        top: 65px;
+                        z-index: 11;
+                        clip-path: polygon(0 0, 0 100%, 100% 0);
+                        width: 8px;
+                        height: 10px;
                     }
                     .news-in {
                         text-align: right;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
                         color: black !important;
                         font-size: 12px !important;
                         margin-top: 5px;
@@ -573,14 +587,29 @@
         padding: 7px 0;
         font-size: 14px;
     }
-    section {
+    .fixed-menu {
+        position: fixed !important;
+        top: 0 !important;
+        z-index: 20 !important;
+        width: 100%;
+        height: 54px !important;
+        border-bottom: 4px solid #f6d014;
+        img {
+            height: 50px !important;
+        }
+    }
+    .fixed-small {
+        position: fixed !important;
+        top: 0 !important;
+        z-index: 20 !important;
+        height: 54px !important;
+        border-bottom: 4px solid #f6d014;
+        img {
+            height: 50px !important;
+        }
+    }
+    section{
         position: relative;
-        margin-top: 5px;
-    }
-    .big-title{
-        margin-bottom: 0 !important;
-    }
-    .short-border{
-        margin-top: 0 !important;
+        margin-top: 20px;
     }
 }

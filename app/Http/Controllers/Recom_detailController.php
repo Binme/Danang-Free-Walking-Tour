@@ -30,6 +30,7 @@ class Recom_detailController extends Controller
     	$recom_detail_3 = Recom_detail::findOrfail($id_recom_3);
     	$recom_detail_4 = Recom_detail::findOrFail($id_recom_4);
     	$recom_detail_relatives = array('recom_detail_1' => $recom_detail_1,'recom_detail_2' => $recom_detail_2,'recom_detail_3' => $recom_detail_3,'recom_detail_4' => $recom_detail_4);
+        // return dd($recom_detail_relatives);
     	return view('test',compact('recom_detail','recom_detail_relatives'));
     }
 }
