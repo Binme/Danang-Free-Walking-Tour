@@ -32,4 +32,23 @@ class New_detailController extends Controller
     	$new_detail_relatives = array('new_detail_1' => $new_detail_1,'new_detail_2' => $new_detail_2,'new_detail_3' => $new_detail_3,'new_detail_4' => $new_detail_4);
     	return view('news',compact('new_detail','new_detail_relatives'));
     }
+    public function exportDatabase(){
+        $posts = Post::get();
+        foreach ($posts as $post) {
+            echo "[";
+            echo "<br>";
+            echo "'img'=>'" .$post->img. "',";
+            echo "<br>";
+            echo "'title'=>'" .$post->title. "',";
+            echo "<br>";
+            echo "'author'=>'" .$post->author. "',";
+            echo "<br>";
+            echo "'heart'=>null,";
+            echo "<br>";
+            echo "'body'=>'" .$post->body. "',";
+            echo "<br>";
+            echo "],";
+            echo "<br>";
+        }    
+    }
 }

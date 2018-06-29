@@ -76,7 +76,6 @@ Route::group(['prefix' => 'admin','middleware' => 'isAdmin'], function () {
             return view('admin/service/index');
         });
     });
-
 });
 
 
