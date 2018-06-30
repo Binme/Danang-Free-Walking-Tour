@@ -11,7 +11,7 @@ class HomeController extends Controller
     public function index(){
     	$news = Post::get();
     	$recoms = Recom::take(10)->get();
-    	return view('index',compact('news','recoms'));
+    	return view('demo',compact('news','recoms'));
     }
     public function admin(){
     	return view('admin/index');
