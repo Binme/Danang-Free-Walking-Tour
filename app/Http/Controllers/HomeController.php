@@ -9,9 +9,9 @@ use App\Recom;
 class HomeController extends Controller
 {
     public function index(){
-    	$news = Post::get();
+    	$news = Post::take(4)->get();
     	$recoms = Recom::take(10)->get();
-    	return view('demo',compact('news','recoms'));
+    	return view('index',compact('news','recoms'));
     }
     public function admin(){
     	return view('admin/index');

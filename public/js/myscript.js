@@ -13,14 +13,14 @@ owl.owlCarousel({
         0: {
             items: 2.5,
             margin: 5,
-            autoplay: true,
+            autoplay: false,
             autoplayTimeout: 3000,
-            slideBy: 2,
+            slideBy: 1,
         },
         600: {
             items: 4.5,
             autoplay: true,
-            autoplayTimeout: 1000,
+            autoplayTimeout: 3000,
             slideBy: 1,
             autoplayHoverPause: true,
         }
@@ -50,6 +50,8 @@ $(document).ready(function () {
     $('.thingsImage').css('height', x * 0.7);
     x = $('.cardImage').width();
     $('.cardImage').css('height', x);
+    z = $('.item-box').height() + 16;
+    $('.item-box').css('width', z);
 });
 window.addEventListener("load", function (event) {
     lazyload();

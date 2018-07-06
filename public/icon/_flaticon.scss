@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 29/06/2018 17:37
+    Creation date: 04/07/2018 04:07
     */
 
     @font-face {
@@ -36,16 +36,28 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-joker:before { content: "\f100"; }
-.flaticon-leaf:before { content: "\f101"; }
-.flaticon-bed:before { content: "\f102"; }
-.flaticon-kitchen:before { content: "\f103"; }
-.flaticon-cocktail:before { content: "\f104"; }
-.flaticon-bag:before { content: "\f105"; }
+    .flaticon-walk:before { content: "\f100"; }
+.flaticon-shop:before { content: "\f101"; }
+.flaticon-paris:before { content: "\f102"; }
+.flaticon-museum:before { content: "\f103"; }
+.flaticon-boston:before { content: "\f104"; }
+.flaticon-rotterdam:before { content: "\f105"; }
+.flaticon-joker:before { content: "\f106"; }
+.flaticon-leaf:before { content: "\f107"; }
+.flaticon-bed:before { content: "\f108"; }
+.flaticon-kitchen:before { content: "\f109"; }
+.flaticon-cocktail:before { content: "\f10a"; }
+.flaticon-bag:before { content: "\f10b"; }
     
-    $font-Flaticon-joker: "\f100";
-    $font-Flaticon-leaf: "\f101";
-    $font-Flaticon-bed: "\f102";
-    $font-Flaticon-kitchen: "\f103";
-    $font-Flaticon-cocktail: "\f104";
-    $font-Flaticon-bag: "\f105";
+    $font-Flaticon-walk: "\f100";
+    $font-Flaticon-shop: "\f101";
+    $font-Flaticon-paris: "\f102";
+    $font-Flaticon-museum: "\f103";
+    $font-Flaticon-boston: "\f104";
+    $font-Flaticon-rotterdam: "\f105";
+    $font-Flaticon-joker: "\f106";
+    $font-Flaticon-leaf: "\f107";
+    $font-Flaticon-bed: "\f108";
+    $font-Flaticon-kitchen: "\f109";
+    $font-Flaticon-cocktail: "\f10a";
+    $font-Flaticon-bag: "\f10b";

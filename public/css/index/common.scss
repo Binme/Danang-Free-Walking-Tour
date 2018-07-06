@@ -13,7 +13,8 @@
 }
 section{
     position: relative;
-    margin-top: 35px;
+    background: white;
+    margin-top: 16px;
 }
 a{
     transition: 0.3s ease all !important;
@@ -24,12 +25,10 @@ a{
         color: #f6d014 !important;
     }
 }
-h1.big-title {
-    font-weight: 700;
-    letter-spacing: 2px;
-}
 body{
     position: relative;
+    background: #F5F6F7;
+    font-family: Oxygen !important;
 }
 .description-text {
     color: #777;
@@ -38,4 +37,17 @@ body{
 }
 .owl-dots{
     display: none !important;
+}
+@keyframes runbaby {
+    0% {
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -12%);
+    }
+    100%{
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        display: none !important;
+    }
 }

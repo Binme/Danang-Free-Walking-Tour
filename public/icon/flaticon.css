@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 29/06/2018 17:37
+  	Creation date: 04/07/2018 04:07
   	*/
 
 @font-face {
@@ -29,9 +29,15 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-joker:before { content: "\f100"; }
-.flaticon-leaf:before { content: "\f101"; }
-.flaticon-bed:before { content: "\f102"; }
-.flaticon-kitchen:before { content: "\f103"; }
-.flaticon-cocktail:before { content: "\f104"; }
-.flaticon-bag:before { content: "\f105"; }
+.flaticon-walk:before { content: "\f100"; }
+.flaticon-shop:before { content: "\f101"; }
+.flaticon-paris:before { content: "\f102"; }
+.flaticon-museum:before { content: "\f103"; }
+.flaticon-boston:before { content: "\f104"; }
+.flaticon-rotterdam:before { content: "\f105"; }
+.flaticon-joker:before { content: "\f106"; }
+.flaticon-leaf:before { content: "\f107"; }
+.flaticon-bed:before { content: "\f108"; }
+.flaticon-kitchen:before { content: "\f109"; }
+.flaticon-cocktail:before { content: "\f10a"; }
+.flaticon-bag:before { content: "\f10b"; }
