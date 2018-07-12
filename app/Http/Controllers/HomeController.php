@@ -9,7 +9,7 @@ use App\Recom;
 class HomeController extends Controller
 {
     public function index(){
-    	$news = Post::take(4)->get();
+    	$news = Post::take(2)->get();
     	$recoms = Recom::take(10)->get();
     	return view('index',compact('news','recoms'));
     }

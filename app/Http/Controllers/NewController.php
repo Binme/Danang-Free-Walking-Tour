@@ -83,4 +83,20 @@ class NewController extends Controller
 
       return redirect('/admin/news/')->with('flash_message', 'Post Edited');
     }
+    public function ajaxNewsPrevious($id){
+      if ($id == 1) {
+        $news = Post::take(2)->get();
+        return response()->json($news);
+      }
+      $news = Post::where('id','=',$id - 2)->orWhere('id','=',$id - 1)->get();
+      return response()->json($news);
+    }
+    public function ajaxNewsNext($id){
+      if ($id == 10) {
+        $news = Post::where('id','=',10)->orWhere('id','=',9)->get();
+        return response()->json($news);
+      }
+      $news = Post::where('id','=',$id + 2)->orWhere('id','=',$id + 1)->get();
+      return response()->json($news);
+    }
 }

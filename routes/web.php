@@ -15,7 +15,9 @@ Route::get('/', 'HomeController@index');
 Route::get('/news/{id}','New_detailController@getNewsById');
 Route::get('/recoms/{id}','Recom_detailController@index');
 Route::get('/recoms/ajax/{filter}','RecomController@ajaxRecoms');
-Route::post('/paypal','PaymentController@payWithpaypal');
+// Route::post('/paypal','PaymentController@payWithpaypal');
+Route::get('/news-previous/ajax/{id}','NewController@ajaxNewsPrevious');
+Route::get('/news-next/ajax/{id}','NewController@ajaxNewsNext');
 
 
 Route::get('/view/login','UserController@viewLogin');

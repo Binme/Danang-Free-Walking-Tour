@@ -48,19 +48,8 @@ $(document).ready(function () {
     // post-image   
     x = $('.thingsImage').width();
     $('.thingsImage').css('height', x * 0.7);
-    x = $('.cardImage').width();
-    $('.cardImage').css('height', x);
     z = $('.item-box').height() + 16;
     $('.item-box').css('width', z);
 });
-window.addEventListener("load", function (event) {
-    lazyload();
-});
 // wow.js
 new WOW().init();
-
-// function change thingstodo - home
-$('.things-but').on('click', function(){
-    $('.things-but').removeClass('things-but-clicked');
-    $(this).addClass('things-but-clicked');
-})

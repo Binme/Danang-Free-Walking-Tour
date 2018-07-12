@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 04/07/2018 04:07
+    Creation date: 11/07/2018 09:48
     */
 
     @font-face {
@@ -37,27 +37,31 @@
     }
 
     .flaticon-walk:before { content: "\f100"; }
-.flaticon-shop:before { content: "\f101"; }
-.flaticon-paris:before { content: "\f102"; }
+.flaticon-gift:before { content: "\f101"; }
+.flaticon-share:before { content: "\f102"; }
 .flaticon-museum:before { content: "\f103"; }
-.flaticon-boston:before { content: "\f104"; }
-.flaticon-rotterdam:before { content: "\f105"; }
-.flaticon-joker:before { content: "\f106"; }
-.flaticon-leaf:before { content: "\f107"; }
-.flaticon-bed:before { content: "\f108"; }
+.flaticon-shop:before { content: "\f104"; }
+.flaticon-bed:before { content: "\f105"; }
+.flaticon-boston:before { content: "\f106"; }
+.flaticon-rotterdam:before { content: "\f107"; }
+.flaticon-paris:before { content: "\f108"; }
 .flaticon-kitchen:before { content: "\f109"; }
-.flaticon-cocktail:before { content: "\f10a"; }
-.flaticon-bag:before { content: "\f10b"; }
+.flaticon-leaf:before { content: "\f10a"; }
+.flaticon-cocktail:before { content: "\f10b"; }
+.flaticon-joker:before { content: "\f10c"; }
+.flaticon-eye:before { content: "\f10d"; }
     
     $font-Flaticon-walk: "\f100";
-    $font-Flaticon-shop: "\f101";
-    $font-Flaticon-paris: "\f102";
+    $font-Flaticon-gift: "\f101";
+    $font-Flaticon-share: "\f102";
     $font-Flaticon-museum: "\f103";
-    $font-Flaticon-boston: "\f104";
-    $font-Flaticon-rotterdam: "\f105";
-    $font-Flaticon-joker: "\f106";
-    $font-Flaticon-leaf: "\f107";
-    $font-Flaticon-bed: "\f108";
+    $font-Flaticon-shop: "\f104";
+    $font-Flaticon-bed: "\f105";
+    $font-Flaticon-boston: "\f106";
+    $font-Flaticon-rotterdam: "\f107";
+    $font-Flaticon-paris: "\f108";
     $font-Flaticon-kitchen: "\f109";
-    $font-Flaticon-cocktail: "\f10a";
-    $font-Flaticon-bag: "\f10b";
+    $font-Flaticon-leaf: "\f10a";
+    $font-Flaticon-cocktail: "\f10b";
+    $font-Flaticon-joker: "\f10c";
+    $font-Flaticon-eye: "\f10d";
