@@ -92,7 +92,8 @@ class NewController extends Controller
       return response()->json($news);
     }
     public function ajaxNewsNext($id){
-      if ($id == 10) {
+      $idMax = Post::max('id');
+      if ($id == $idMax) {
         $news = Post::where('id','=',10)->orWhere('id','=',9)->get();
         return response()->json($news);
       }

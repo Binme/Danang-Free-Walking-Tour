@@ -183,7 +183,7 @@
                 <div class="card-item big-item">
                     <div class="card-show">
                         <div class="show-img">
-                            <img class="cardImage" src="assets/images/Cover pic 1 1 - webside icon.jpg" alt="">
+                            <img class="cardImage" src="assets/images/Cover pic 1 1 - webside icon-min.jpg" alt="">
                             <div class="card-hide">
                                 <div class="hide-wrap">
                                     <div class="hide-title">Walking tour in the center of Da Nang discovering 5 attractive places with local university
