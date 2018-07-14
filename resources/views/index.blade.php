@@ -311,14 +311,14 @@
             </div>
             <div class="owl-carousel loop">
             @foreach($recoms as $recom)    
-                <div class="card-row">
+                <div class="card-row" style="visibility: hidden">
                     <a href="{{url('/recoms/' .$recom->id)}}" class="link{{substr($recom->id, -1, 1)}}">
                         <div class="things-card">
                             <div class="things-img">
-                                <img class="thingsImage img{{substr($recom->id, -1, 1)}}" src="assets/images/ThingsToDo/{{$recom->img}}" alt="">
+                                <img class="thingsImage img{{substr($recom->id, -1, 1)}}" src="" alt="">
                             </div>
-                            <div class="things-detail address{{substr($recom->id, -1, 1)}}">{{$recom->address}}</div>
-                            <div class="things-description title{{substr($recom->id, -1, 1)}}"" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">{{$recom->title}}</div>
+                            <div class="things-detail address{{substr($recom->id, -1, 1)}}"></div>
+                            <div class="things-description title{{substr($recom->id, -1, 1)}}"" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"></div>
                         </div>
                     </a>
                 </div>
@@ -461,6 +461,7 @@
     <script type="text/javascript">    
         function card(id)
         {
+            $(".card-row").css("visibility","visible");
           $.ajax({
             type:'get',
             url:'recoms/ajax/' + id,
