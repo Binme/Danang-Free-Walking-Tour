@@ -7,13 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>DANANGFREEWALKINGTOUR</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/things/common.things.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/things/desktop.things.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/things/mobile.things.css') }}">
+  <link rel="stylesheet" href="{{ asset('media/css/animate.css') }}">
+  <link rel="stylesheet" href="{{ asset('media/css/bootstrap.css') }}">
+  <link rel="stylesheet" href="{{ asset('media/css/owl.carousel.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('media/css/owl.theme.default.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('media/css/things/common.things.css') }}">
+  <link rel="stylesheet" href="{{ asset('media/css/things/desktop.things.css') }}">
+  <link rel="stylesheet" href="{{ asset('media/css/things/mobile.things.css') }}">
 </head>
 
 <body>
@@ -230,10 +230,9 @@
     crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
-  <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-  <script src="{{ asset('js/wow.js') }}"></script>
-  <script src="{{ asset('js/things.script.js') }}"></script>
+  <script src="{{ asset('media/js/owl.carousel.min.js') }}"></script>
+  <script src="{{ asset('media/js/wow.js') }}"></script>
+  <script src="{{ asset('media/js/things.script.js') }}"></script>
 </body>
 
 </html>

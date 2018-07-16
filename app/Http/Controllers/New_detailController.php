@@ -9,7 +9,7 @@ class New_detailController extends Controller
 {
     public function getNewsById($id){
     	$new_detail = Post::findOrFail($id);
-        $new_detail_relatives = Post::where('id','<>',$id)->paginate(4);
+        $new_detail_relatives = Post::where('id','<>',$id)->offset($id - 4)->take(4)->get();
     	return view('news',compact('new_detail','new_detail_relatives'));
     }
     public function exportDatabase(){
