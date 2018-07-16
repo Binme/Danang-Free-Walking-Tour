@@ -18,6 +18,7 @@ Route::get('/recoms/ajax/{filter}','RecomController@ajaxRecoms');
 // Route::post('/paypal','PaymentController@payWithpaypal');
 Route::get('/news-previous/ajax/{id}','NewController@ajaxNewsPrevious');
 Route::get('/news-next/ajax/{id}','NewController@ajaxNewsNext');
+Route::get('/demo','Recom_detailController@demo');
 
 
 Route::get('/view/login','UserController@viewLogin');

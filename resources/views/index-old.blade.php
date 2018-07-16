@@ -19,7 +19,7 @@
 
 <body>
     <!-- Chat with us -->
-    <div class="chat wow bounceInLeft" data-wow-duration="1s">
+    <div class="chat wow bounceInLeft" data-wow-delay="1s">
         <a href="https://m.me/danangfreewalkingtour" target="_bla">
             <i class="fab fa-facebook-messenger"></i>
         </a>
@@ -33,15 +33,15 @@
         </div>
         <div class="info">
             <div class="info-item">
-                <div class="info-number">49+</div>
+                <div class="info-number fadeInLeft wow">49+</div>
                 <div class="info-text">Tour Guides</div>
             </div>
             <div class="info-item">
-                <div class="info-number">2489+</div>
+                <div class="info-number fadeInDown wow">2489+</div>
                 <div class="info-text">Happy Clients</div>
             </div>
             <div class="info-item">
-                <div class="info-number">1896+</div>
+                <div class="info-number fadeInRight wow">1896+</div>
                 <div class="info-text">Tours</div>
             </div>
         </div>
@@ -62,7 +62,6 @@
                 <i class="fab fa-tripadvisor"></i>
             </a>
         </div>
-
     </header>
     <!-- MAIN -->
     <main>
@@ -78,7 +77,7 @@
         </section>
         <section class="route">
             <div class="route-title">
-                We will lead you to Top 5 famoust destinations in the center of the City!
+                We will lead you to the top 5 destinations in the center of our city!
             </div>
             <div class="route-map">
                 <div class="route-course">
@@ -87,7 +86,7 @@
                     </div>
                     <div class="time-border"></div>
                     <div class="time-description">
-                        Distant
+                        Distance
                     </div>
                     <div class="time-text">
                         3150 Miles
@@ -109,7 +108,7 @@
                         <img src="icon/007-flag.svg" alt="">
                     </div>
                     <div class="text-border">
-                        <p>2 MIN WALK</p>
+                        <p>2 MINS WALKING</p>
                         <div class="walk-border">
                             <i class="flaticon-walk"></i>
                             <div class="route-line"></div>
@@ -124,14 +123,14 @@
                             <i class="flaticon-walk"></i>
                             <div class="route-line"></div>
                         </div>
-                        <p>6 MIN WALK</p>
+                        <p>6 MINS WALKING</p>
                     </div>
                     <div class="text-place">
                         <p>DRAGON BRIDGE</p>
                         <i class="flaticon-rotterdam"></i>
                     </div>
                     <div class="text-border">
-                        <p>10 MIN WALK</p>
+                        <p>10 MINS WALKING</p>
                         <div class="walk-border">
                             <i class="flaticon-walk"></i>
                             <div class="route-line"></div>
@@ -146,14 +145,14 @@
                             <i class="flaticon-walk"></i>
                             <div class="route-line"></div>
                         </div>
-                        <p>2 MIN WALK</p>
+                        <p>2 MINS WALKING</p>
                     </div>
                     <div class="text-place">
                         <p>CATHEDRAL</p>
                         <i class="flaticon-paris"></i>
                     </div>
                     <div class="text-border">
-                        <p>20 MIN WALK</p>
+                        <p>20 MINS WALKING</p>
                         <div class="walk-border">
                             <i class="flaticon-walk"></i>
                             <div class="route-line"></div>
@@ -165,51 +164,12 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="thingstodo">
-            <div class="things-title">
-                THINGS TO DO
-            </div>
-            <div class="things-catalog">
-                <div class="things-but things-but-clicked" onclick="card('eat')">
-                    <i class="flaticon-kitchen"></i>
-                    <p>Where to eat</p>
-                </div>
-                <div class="things-but" onclick="card('drink')">
-                    <i class="flaticon-cocktail"></i>
-                    <p>Where to drink</p>
-                </div>
-                <div class="things-but" onclick="card('relax')">
-                    <i class="flaticon-leaf"></i>
-                    <p>Where to relax</p>
-                </div>
-                <div class="things-but" onclick="card('buy')">
-                    <i class="flaticon-bag"></i>
-                    <p>Where to buy</p>
-                </div>
-                <div class="things-but" onclick="card('entertainment')">
-                    <i class="flaticon-joker"></i>
-                    <p>Where to entertain</p>
-                </div>
-                <div class="things-but" onclick="card('stay')">
-                    <i class="flaticon-bed"></i>
-                    <p>Where to stay</p>
-                </div>
-            </div>
-            <div class="owl-carousel loop">
-            @foreach($recoms as $recom)    
-                <div class="card-row">
-                    <a href="{{url('/recoms/' .$recom->id)}}" class="link{{substr($recom->id, -1, 1)}}">
-                        <div class="things-card">
-                            <div class="things-img">
-                                <img class="thingsImage img{{substr($recom->id, -1, 1)}}" src="assets/images/ThingsToDo/{{$recom->img}}" alt="">
-                            </div>
-                            <div class="things-detail address{{substr($recom->id, -1, 1)}}">{{$recom->address}}</div>
-                            <div class="things-description title{{substr($recom->id, -1, 1)}}"" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">{{$recom->title}}</div>
-                        </div>
-                    </a>
-                </div>
-            @endforeach    
+            <div class="route-but wow tada">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rOXw8bf2o3eEmZDAdsreEgfvpUTGzeu1CDVgC7ufgInIgw/viewform">
+                    <div class="but-here">
+                        Join Us Now!
+                    </div>
+                </a>
             </div>
         </section>
         <section class="tours">
@@ -220,63 +180,33 @@
                 We provide all of theses unique experiences for our visitors. Check it out!
             </div>
             <div class="card-row">
-                <div class="card-item">
+                <div class="card-item big-item">
                     <div class="card-show">
                         <div class="show-img">
-                            <img class="cardImage" src="assets/images/danangtour.png" alt="">
+                            <img class="cardImage" src="assets/images/Cover pic 1 1 - webside icon-min.jpg" alt="">
                             <div class="card-hide">
                                 <div class="hide-wrap">
                                     <div class="hide-title">Walking tour in the center of Da Nang discovering 5 attractive places with local university
                                         students. </div>
                                     <div class="hide-bor"></div>
                                     <div class="hide-time">
-                                        10:00 am - 11:30 am
-                                        <br> 3:00 pm - 4:30 pm
+                                        11:00 am - 1:00 pm
+                                        <br> 5:00 pm - 7:00 pm
                                     </div>
                                     <div class="hide-bor-2"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="show-title">
-                            Da Nang Around You
+                            Foody Story Tour
                         </div>
                         <div class="tips">
-                            Tip Based
+                            $17/Person
                         </div>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rOXw8bf2o3eEmZDAdsreEgfvpUTGzeu1CDVgC7ufgInIgw/viewform">
                             <div class="button">Book Now</div>
                         </a>
                     </div>
-
-                </div>
-                <div class="card-item">
-                    <div class="card-show">
-                        <div class="show-img">
-                            <img class="cardImage" src="assets/images/food.jpg" alt="">
-                            <div class="card-hide">
-                                <div class="hide-wrap">
-                                    <div class="hide-title">Walking tour in the center of Da Nang discovering 5 attractive places with local university
-                                        students. </div>
-                                    <div class="hide-bor"></div>
-                                    <div class="hide-time">
-                                        10:00 am - 11:30 am
-                                        <br> 3:00 pm - 4:30 pm
-                                    </div>
-                                    <div class="hide-bor-2"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="show-title">
-                                Foody Story Tour
-                        </div>
-                        <div class="tips">
-                                Free
-                        </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rOXw8bf2o3eEmZDAdsreEgfvpUTGzeu1CDVgC7ufgInIgw/viewform">
-                            <div class="button">Book Now</div>
-                        </a>
-                    </div>
-
                 </div>
                 <div class="card-item">
                     <div class="card-show">
@@ -296,16 +226,15 @@
                             </div>
                         </div>
                         <div class="show-title">
-                                Museum Planner
+                            Museum Planner
                         </div>
                         <div class="tips">
-                                20$/Peson
+                            $20/Person
                         </div>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rOXw8bf2o3eEmZDAdsreEgfvpUTGzeu1CDVgC7ufgInIgw/viewform">
                             <div class="button">Book Now</div>
                         </a>
                     </div>
-
                 </div>
                 <div class="card-item">
                     <div class="card-show">
@@ -325,10 +254,10 @@
                             </div>
                         </div>
                         <div class="show-title">
-                                Your Trip Planner
+                            Your Trip Planner
                         </div>
                         <div class="tips">
-                                Free
+                            Free
                         </div>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rOXw8bf2o3eEmZDAdsreEgfvpUTGzeu1CDVgC7ufgInIgw/viewform">
                             <div class="button">Book Now</div>
@@ -338,230 +267,62 @@
                 </div>
             </div>
         </section>
-        <section class="package">
-            <div class="package-title">
-                PACKAGES FOR YOU
+        <section class="thingstodo">
+            <div class="things-title">
+                THINGS TO DO
             </div>
-            <div class="package-choose">
-                <div class="left-pack">
-                    <i class="fas fa-chevron-left"></i>
+            <div class="things-catalog">
+                <div class="things-but" onclick="card('eat')">
+                    <a>
+                        <i class="flaticon-kitchen"></i>
+                        <p>EAT</p>
+                    </a>
                 </div>
-                <div class="img-pack">
-                    <img src="assets/images/pack.png" alt="">
+                <div class="things-but" onclick="card('drink')">
+                    <a>
+                        <i class="flaticon-cocktail"></i>
+                        <p>DRINK</p>
+                    </a>
                 </div>
-                <div class="right-pack">
-                    <i class="fas fa-chevron-right"></i>
+                <div class="things-but" onclick="card('stay')">
+                    <a>
+                        <i class="flaticon-bed"></i>
+                        <p>STAY</p>
+                    </a>
+                </div>
+                <div class="things-but" onclick="card('relax')">
+                    <a>
+                        <i class="flaticon-leaf"></i>
+                        <p>RELAX</p>
+                    </a>
+                </div>
+                <div class="things-but" onclick="card('entertainment')">
+                    <a>
+                        <i class="flaticon-joker"></i>
+                        <p>ENTERTAIN</p>
+                    </a>
+                </div>
+                <div class="things-but" onclick="card('buy')">
+                    <a>
+                        <i class="flaticon-gift"></i>
+                        <p>GIFT</p>
+                    </a>
                 </div>
             </div>
-            <div class="pack-list">
-                <div class="pack-item">
-                    <div class="item-title">
-                        <div class="item-name">Basic</div>
-                        <div class="space">|</div>
-                        <div class="item-cost">
-                            <b>18 </b>USD</div>
-                    </div>
-                    <div class="item-list">
-                        <div class="item-row">
-                            <div class="item-check">
-                                <i class="fas fa-check"></i>
+            <div class="owl-carousel loop">
+            @foreach($recoms as $recom)    
+                <div class="card-row" style="visibility: hidden">
+                    <a href="{{url('/recoms/' .$recom->id)}}" class="link{{substr($recom->id, -1, 1)}}">
+                        <div class="things-card">
+                            <div class="things-img">
+                                <img class="thingsImage img{{substr($recom->id, -1, 1)}}" src="" alt="">
                             </div>
-                            <div class="item-text">
-                                Phuc Long Jamine tea premium
-                            </div>
+                            <div class="things-detail address{{substr($recom->id, -1, 1)}}"></div>
+                            <div class="things-description title{{substr($recom->id, -1, 1)}}"" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"></div>
                         </div>
-                        <div class="item-row">
-                            <div class="item-check">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="item-text">
-                                Coffee Roasted Highlands coffee
-                            </div>
-                        </div>
-                        <div class="item-row">
-                            <div class="item-check">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="item-text">
-                                Roasted Cashew with salt
-                            </div>
-                        </div>
-                        <div class="item-row">
-                            <div class="item-check">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="item-text">
-                                Legendary Chocolatier Travel
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-buy">
-                        <div class="item-down">-</div>
-                        <div class="item-box">
-                            1
-                        </div>
-                        <div class="item-up">+</div>
-                    </div>
-                    <div class="item-button">
-                        <a href=""><div class="item-but-here">BUY NOW</div></a>
-                    </div>
+                    </a>
                 </div>
-                <div class="pack-item">
-                    <div class="item-title">
-                        <div class="item-name">Basic</div>
-                        <div class="space">|</div>
-                        <div class="item-cost">
-                            <b>18 </b>USD</div>
-                    </div>
-                    <div class="item-list">
-                        <div class="item-row">
-                            <div class="item-check">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="item-text">
-                                Phuc Long Jamine tea premium
-                            </div>
-                        </div>
-                        <div class="item-row">
-                            <div class="item-check">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="item-text">
-                                Coffee Roasted Highlands coffee
-                            </div>
-                        </div>
-                        <div class="item-row">
-                            <div class="item-check">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="item-text">
-                                Roasted Cashew with salt
-                            </div>
-                        </div>
-                        <div class="item-row">
-                            <div class="item-check">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="item-text">
-                                Legendary Chocolatier Travel
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-buy">
-                        <div class="item-down">-</div>
-                        <div class="item-box">
-                            1
-                        </div>
-                        <div class="item-up">+</div>
-                    </div>
-                    <div class="item-button">
-                            <a href=""><div class="item-but-here">BUY NOW</div></a>
-                    </div>
-                </div>
-                <div class="pack-item">
-                    <div class="item-title">
-                        <div class="item-name">Basic</div>
-                        <div class="space">|</div>
-                        <div class="item-cost">
-                            <b>18 </b>USD</div>
-                    </div>
-                    <div class="item-list">
-                        <div class="item-row">
-                            <div class="item-check">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="item-text">
-                                Phuc Long Jamine tea premium
-                            </div>
-                        </div>
-                        <div class="item-row">
-                            <div class="item-check">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="item-text">
-                                Coffee Roasted Highlands coffee
-                            </div>
-                        </div>
-                        <div class="item-row">
-                            <div class="item-check">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="item-text">
-                                Roasted Cashew with salt
-                            </div>
-                        </div>
-                        <div class="item-row">
-                            <div class="item-check">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="item-text">
-                                Legendary Chocolatier Travel
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-buy">
-                        <div class="item-down">-</div>
-                        <div class="item-box">
-                            1
-                        </div>
-                        <div class="item-up">+</div>
-                    </div>
-                    <div class="item-button">
-                            <a href=""><div class="item-but-here">BUY NOW</div></a>
-                    </div>
-                </div>
-                <div class="pack-item">
-                    <div class="item-title">
-                        <div class="item-name">Basic</div>
-                        <div class="space">|</div>
-                        <div class="item-cost">
-                            <b>18 </b>USD</div>
-                    </div>
-                    <div class="item-list">
-                        <div class="item-row">
-                            <div class="item-check">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="item-text">
-                                Phuc Long Jamine tea premium
-                            </div>
-                        </div>
-                        <div class="item-row">
-                            <div class="item-check">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="item-text">
-                                Coffee Roasted Highlands coffee
-                            </div>
-                        </div>
-                        <div class="item-row">
-                            <div class="item-check">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="item-text">
-                                Roasted Cashew with salt
-                            </div>
-                        </div>
-                        <div class="item-row">
-                            <div class="item-check">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="item-text">
-                                Legendary Chocolatier Travel
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-buy">
-                        <div class="item-down">-</div>
-                        <div class="item-box">
-                            1
-                        </div>
-                        <div class="item-up">+</div>
-                    </div>
-                    <div class="item-button">
-                            <a href=""><div class="item-but-here">BUY NOW</div></a>
-                    </div>
-                </div>
+            @endforeach    
             </div>
         </section>
         <section class="latest-news">
@@ -569,20 +330,36 @@
                 GUYS, CATCH UP WITH US !
             </h1>
             <div class="news">
-            @foreach ($news as $new)    
-                <a href="{{url('/news/' .$new->id)}}">
+                @foreach ($news as $new)
+                <a href="{{url('/news/' .$new->id)}}" id="post-link-{{$new->id}}">
+                    <input type="hidden" name="" id="post{{$new->id}}" value="{{$new->id}}">
                     <div class="news-item">
-                        <div class="item-title">
-                            {{$new->title}}
+                        <div class="news-text">
+                            <div class="item-title post-title-{{$new->id}}">
+                                {{$new->title}}
+                            </div>
+                            <div class="item-author post-author-{{$new->id}}">
+                                <p>{{$new->author}}</p>
+                            </div>
                         </div>
-                        <div class="item-author">
-                            Posted by
-                            <b>{{$new->author}} </b>
+                        <div class="news-img">
+                            <img src="assets/images/posts/images/{{$new->img}}" class="post-img-{{$new->id}}" alt="" >
                         </div>
-                        <div class="news-bor"></div>
                     </div>
                 </a>
-            @endforeach    
+                @endforeach
+            </div>
+            <div class="news-page">
+                <a href="javascript:;">
+                    <div class="icon-but icon-but-left" onclick="post('previous')">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                </a>
+                <a href="javascript:;">
+                    <div class="icon-but icon-but-right" onclick="post('next')">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
             </div>
         </section>
         <section class="about-us">
@@ -635,6 +412,12 @@
                     <img src="assets/images/logo.jpg" alt="">
                 </div>
                 <div class="contact">
+                        <div class="contact-icon">
+                                <a href="mailto:danangfreewalkingtour@gmail.com">
+                                    <i class="fas fa-envelope-open"></i>
+                                    <p>danangfreewalkingtour@gmail.com</p>
+                                </a>
+                            </div>
                     <div class="contact-icon">
                         <a href="">
                             <i class="fas fa-map-marker-alt"></i>
@@ -672,14 +455,13 @@
         crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/myscript.js"></script>
     <script type="text/javascript">    
         function card(id)
         {
-          var ele=document.getElementById(id);
+            $(".card-row").css("visibility","visible");
           $.ajax({
             type:'get',
             url:'recoms/ajax/' + id,
@@ -693,8 +475,43 @@
                 <?php endfor; ?>
               }
           });
-        
-        }     
+        }    
+        function post(id)
+        {
+            if (id == 'previous'){
+                var ele = $("#post1").val();
+                $.ajax({
+                    type:'get',
+                    url:'news-previous/ajax/' + ele,
+                    success:function(response) {
+                    console.log(response);
+                        <?php for($i=0;$i<=2;$i++): ?>
+                        $("#post-link-<?php echo $i + 1 ?>").attr("href","http://danangfreewalkingtour.com/news/"+response[<?php echo $i ?>].id);   
+                        $("#post<?php echo $i + 1 ?>").val(response[<?php echo $i ?>].id); 
+                        $(".post-img-<?php echo $i + 1 ?>").fadeOut().attr('src','assets/images/posts/images/'+response[<?php echo $i ?>].img).fadeIn();
+                        $(".post-title-<?php echo $i + 1 ?>").fadeOut().html(response[<?php echo $i ?>].title).fadeIn();  
+                        $(".post-author-<?php echo $i + 1 ?>").fadeOut().html('<p>' +response[<?php echo $i ?>].author+ '</p>').fadeIn();  
+                        <?php endfor; ?>
+                    }
+                });
+            }else if (id == 'next') {
+                var ele = $("#post2").val();
+                $.ajax({
+                    type:'get',
+                    url:'news-next/ajax/' + ele,
+                    success:function(response) {
+                    console.log(response);
+                        <?php for($i=0;$i<=2;$i++): ?>
+                        $("#post-link-<?php echo $i + 1 ?>").attr("href","http://danangfreewalkingtour.com/news/"+response[<?php echo $i ?>].id);   
+                        $("#post<?php echo $i + 1 ?>").val(response[<?php echo $i ?>].id); 
+                        $(".post-img-<?php echo $i + 1 ?>").fadeOut().attr('src','assets/images/posts/images/'+response[<?php echo $i ?>].img).fadeIn();
+                        $(".post-title-<?php echo $i + 1 ?>").fadeOut().html(response[<?php echo $i ?>].title).fadeIn();  
+                        $(".post-author-<?php echo $i + 1 ?>").fadeOut().html('<p>' +response[<?php echo $i ?>].author+ '</p>').fadeIn();  
+                        <?php endfor; ?>
+                    }
+                });
+            }
+        }
     </script>
 </body>
 

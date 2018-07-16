@@ -8,28 +8,8 @@ use App\Post;
 class New_detailController extends Controller
 {
     public function getNewsById($id){
-    	$new_detail = Post::find($id);
-    	$id_new_1 = $id + 1;
-    	if ($id_new_1 > 10) {
-    		$id_new_1 = $id - 1;
-    	}
-    	$id_new_2 = $id + 2;
-    	if ($id_new_2 > 10) {
-    		$id_new_2 = $id - 2;
-    	}
-    	$id_new_3 = $id + 3;
-    	if ($id_new_3 > 10) {
-    		$id_new_3 = $id - 3;
-    	}
-    	$id_new_4 = $id + 4;
-    	if ($id_new_4 > 10) {
-    		$id_new_4 = $id - 4;
-    	}
-    	$new_detail_1 = Post::findOrFail($id_new_1);
-    	$new_detail_2 = Post::findOrfail($id_new_2);
-    	$new_detail_3 = Post::findOrfail($id_new_3);
-    	$new_detail_4 = Post::findOrFail($id_new_4);
-    	$new_detail_relatives = array('new_detail_1' => $new_detail_1,'new_detail_2' => $new_detail_2,'new_detail_3' => $new_detail_3,'new_detail_4' => $new_detail_4);
+    	$new_detail = Post::findOrFail($id);
+        $new_detail_relatives = Post::where('id','<>',$id)->paginate(4);
     	return view('news',compact('new_detail','new_detail_relatives'));
     }
     public function exportDatabase(){

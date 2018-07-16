@@ -112,23 +112,23 @@
     <section class="things">
       <div class="things-img">
         <div class="big-img">
-          <img class="bigImgHere" src="{{ asset('assets/images/ThingsToDo/' .$recom_detail->img_1) }}" alt="">
+          <img class="bigImgHere" src="{{ asset('assets/images/ThingsToDo/' .$images[0]->img) }}" alt="">
         </div>
         <div class="small-img">
           <div class="small-item">
-            <img class="imghere here" src="{{ asset('assets/images/ThingsToDo/' .$recom_detail->img_2) }}" alt="">
+            <img class="imghere here" src="{{ asset('assets/images/ThingsToDo/' .$images[0]->img) }}" alt="">
           </div>
           <div class="small-item">
-            <img class="imghere" src="{{ asset('assets/images/ThingsToDo/' .$recom_detail->img_2) }}" alt="">
+            <img class="imghere" src="{{ asset('assets/images/ThingsToDo/' .$images[1]->img) }}" alt="">
           </div>
           <div class="small-item">
-            <img class="imghere" src="{{ asset('assets/images/ThingsToDo/' .$recom_detail->img_3) }}" alt="">
+            <img class="imghere" src="{{ asset('assets/images/ThingsToDo/' .$images[2]->img) }}" alt="">
           </div>
           <div class="small-item">
-            <img class="imghere" src="{{ asset('assets/images/ThingsToDo/' .$recom_detail->img_4) }}" alt="">
+            <img class="imghere" src="{{ asset('assets/images/ThingsToDo/' .$images[3]->img) }}" alt="">
           </div>
           <div class="small-item">
-            <img class="imghere" src="{{ asset('assets/images/ThingsToDo/' .$recom_detail->img_5) }}" alt="">
+            <img class="imghere" src="{{ asset('assets/images/ThingsToDo/' .$images[4]->img) }}" alt="">
           </div>
         </div>
       </div>

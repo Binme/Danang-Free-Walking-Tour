@@ -157,7 +157,7 @@
                         img {
                             width: 30px;
                             height: 30px;
-                            margin-left: 7px;
+                            margin-left: 11px;
                         }
                         p {
                             width: calc(50% - 25px);
@@ -252,7 +252,7 @@
             }
             .route-but {
                 width: 100%;
-                padding: 0 10%;
+                padding: 0 25%;
                 .but-here {
                     background: #f6d014;
                     border-radius: 12px;
@@ -321,7 +321,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-                padding: 0 5px 31px;
+                padding: 0 5px 15px;
                 .card-item {
                     width: calc( 50% - 5px);
                     margin-bottom: 10px;
@@ -376,6 +376,7 @@
                             justify-content: space-evenly;
                             .button {
                                 border-radius: 12px;
+                                margin-top: 4px;
                                 text-align: center;
                                 padding: 4px 0;
                                 width: 60%;
@@ -495,10 +496,17 @@
                     border: 1px solid #f6d014;
                     border-radius: 50%;
                     color: #f6d014 !important;
-                    padding: 4px 10px;
+                    padding: 3px 9px;
                     margin: 0 2px;
-                    i {
-                        display: inline-block;
+                }
+                .icon-but-left{
+                    svg{
+                        margin-right: 1px;
+                    }
+                }
+                .icon-but-right{
+                    svg{
+                        margin-left: 1px;
                     }
                 }
             }
