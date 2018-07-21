@@ -16,49 +16,37 @@ class RecomController extends Controller
     	$input = $request->filter;
     	switch ($input) {
     		case 'eat':
-    			$drinks = Recom::where('filter','=',$input)->get();
-    				$obj = json_decode($drinks);
-    			// echo                "<img src='assets/images/ThingsToDo/".$drinks->img."' alt=''>";	
-    			return response()->json($obj);
+    			$drinks = Recom::where('filter','=',$input)->take(4)->get();	
+    			return view('catalog',compact('drinks'));
     			
     			break;
             case 'drink':
-                $drinks = Recom::where('filter','=',$input)->get();
-                    $obj = json_decode($drinks);
-                // echo                "<img src='assets/images/ThingsToDo/".$drinks->img."' alt=''>";  
-                return response()->json($obj);
+                $drinks = Recom::where('filter','=',$input)->take(4)->get();  
+                return view('catalog',compact('drinks'));
                 
                 break;
 
             case 'relax':
-                $drinks = Recom::where('filter','=',$input)->get();
-                    $obj = json_decode($drinks);
-                // echo                "<img src='assets/images/ThingsToDo/".$drinks->img."' alt=''>";  
-                return response()->json($obj);
+                $drinks = Recom::where('filter','=',$input)->take(4)->get();  
+                return view('catalog',compact('drinks'));
                 
                 break;
 
             case 'entertainment':
-                $drinks = Recom::where('filter','=',$input)->get();
-                    $obj = json_decode($drinks);
-                // echo                "<img src='assets/images/ThingsToDo/".$drinks->img."' alt=''>";  
-                return response()->json($obj);
+                $drinks = Recom::where('filter','=',$input)->take(4)->get();  
+                return view('catalog',compact('drinks'));
                 
                 break;
                     
     		case 'buy':
-                $drinks = Recom::where('filter','=',$input)->get();
-                    $obj = json_decode($drinks);
-                // echo                "<img src='assets/images/ThingsToDo/".$drinks->img."' alt=''>";  
-                return response()->json($obj);
+                $drinks = Recom::where('filter','=',$input)->take(4)->get();  
+                return view('catalog',compact('drinks'));
                 
                 break;
 
             case 'stay':
-                $drinks = Recom::where('filter','=',$input)->get();
-                    $obj = json_decode($drinks);
-                // echo                "<img src='assets/images/ThingsToDo/".$drinks->img."' alt=''>";  
-                return response()->json($obj);
+                $drinks = Recom::where('filter','=',$input)->take(4)->get();  
+                return view('catalog',compact('drinks'));
                 
                 break;    
 

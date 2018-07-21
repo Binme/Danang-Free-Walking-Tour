@@ -104,11 +104,11 @@
                 </div>
                 <div class="route-lead">
                     <div class="text-place">
-                        <p>MEETING POINT</p>
+                        <p class="wow fadeInUp">MEETING POINT</p>
                         <img src="icon/007-flag.svg" alt="">
                     </div>
                     <div class="text-border">
-                        <p>2 MINS WALKING</p>
+                        <p class="wow fadeInUp">2 MINS WALKING</p>
                         <div class="walk-border">
                             <i class="flaticon-walk"></i>
                             <div class="route-line"></div>
@@ -116,21 +116,21 @@
                     </div>
                     <div class="place-text">
                         <i class="flaticon-boston"></i>
-                        <p>HAN BRIDGE</p>
+                        <p class="wow fadeInUp">HAN BRIDGE</p>
                     </div>
                     <div class="border-text">
                         <div class="walk-border">
                             <i class="flaticon-walk"></i>
                             <div class="route-line"></div>
                         </div>
-                        <p>6 MINS WALKING</p>
+                        <p class="wow fadeInUp">6 MINS WALKING</p>
                     </div>
                     <div class="text-place">
-                        <p>DRAGON BRIDGE</p>
+                        <p class="wow fadeInUp">DRAGON BRIDGE</p>
                         <i class="flaticon-rotterdam"></i>
                     </div>
                     <div class="text-border">
-                        <p>10 MINS WALKING</p>
+                        <p class="wow fadeInUp">10 MINS WALKING</p>
                         <div class="walk-border">
                             <i class="flaticon-walk"></i>
                             <div class="route-line"></div>
@@ -138,21 +138,21 @@
                     </div>
                     <div class="place-text">
                         <i class="flaticon-museum"></i>
-                        <p>CHAM MUSEUM</p>
+                        <p class="wow fadeInUp">CHAM MUSEUM</p>
                     </div>
                     <div class="border-text">
                         <div class="walk-border">
                             <i class="flaticon-walk"></i>
                             <div class="route-line"></div>
                         </div>
-                        <p>2 MINS WALKING</p>
+                        <p class="wow fadeInUp">2 MINS WALKING</p>
                     </div>
                     <div class="text-place">
-                        <p>CATHEDRAL</p>
+                        <p class="wow fadeInUp">CATHEDRAL</p>
                         <i class="flaticon-paris"></i>
                     </div>
                     <div class="text-border">
-                        <p>20 MINS WALKING</p>
+                        <p class="wow fadeInUp">20 MINS WALKING</p>
                         <div class="walk-border">
                             <i class="flaticon-walk"></i>
                             <div class="route-line"></div>
@@ -160,7 +160,7 @@
                     </div>
                     <div class="place-text">
                         <i class="flaticon-shop"></i>
-                        <p>HAN MARKET</p>
+                        <p class="wow fadeInUp">HAN MARKET</p>
                     </div>
                 </div>
             </div>
@@ -183,7 +183,7 @@
                 <div class="card-item big-item">
                     <div class="card-show">
                         <div class="show-img">
-                            <img class="cardImage" src="assets/images/Cover pic 1 1 - webside icon-min.jpg" alt="">
+                            <img class="cardImage" src="assets/images/Cover pic 1 1 - webside icon.jpg" alt="">
                             <div class="card-hide">
                                 <div class="hide-wrap">
                                     <div class="hide-title">Walking tour in the center of Da Nang discovering 5 attractive places with local university
@@ -201,7 +201,7 @@
                             Foody Story Tour
                         </div>
                         <div class="tips">
-                            $17/Person
+                            $17/person
                         </div>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rOXw8bf2o3eEmZDAdsreEgfvpUTGzeu1CDVgC7ufgInIgw/viewform">
                             <div class="button">Book Now</div>
@@ -229,7 +229,7 @@
                             Museum Planner
                         </div>
                         <div class="tips">
-                            $20/Person
+                            $20/Peson
                         </div>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rOXw8bf2o3eEmZDAdsreEgfvpUTGzeu1CDVgC7ufgInIgw/viewform">
                             <div class="button">Book Now</div>
@@ -272,57 +272,42 @@
                 THINGS TO DO
             </div>
             <div class="things-catalog">
-                <div class="things-but" onclick="card('eat')">
-                    <a>
+                <div class="things-but">
+                    <a href="{{ url('/recoms/ajax/eat')}}">
                         <i class="flaticon-kitchen"></i>
                         <p>EAT</p>
                     </a>
                 </div>
-                <div class="things-but" onclick="card('drink')">
-                    <a>
+                <div class="things-but">
+                    <a href="{{ url('/recoms/ajax/drink')}}">
                         <i class="flaticon-cocktail"></i>
                         <p>DRINK</p>
                     </a>
                 </div>
-                <div class="things-but" onclick="card('stay')">
-                    <a>
+                <div class="things-but">
+                    <a href="{{ url('/recoms/ajax/stay')}}">
                         <i class="flaticon-bed"></i>
                         <p>STAY</p>
                     </a>
                 </div>
-                <div class="things-but" onclick="card('relax')">
-                    <a>
+                <div class="things-but">
+                    <a href="{{ url('/recoms/ajax/relax')}}">
                         <i class="flaticon-leaf"></i>
                         <p>RELAX</p>
                     </a>
                 </div>
-                <div class="things-but" onclick="card('entertainment')">
-                    <a>
+                <div class="things-but">
+                    <a href="{{ url('/recoms/ajax/entertaiment')}}">
                         <i class="flaticon-joker"></i>
                         <p>ENTERTAIN</p>
                     </a>
                 </div>
-                <div class="things-but" onclick="card('buy')">
-                    <a>
+                <div class="things-but">
+                    <a href="{{ url('/recoms/ajax/buy')}}">
                         <i class="flaticon-gift"></i>
                         <p>GIFT</p>
                     </a>
                 </div>
-            </div>
-            <div class="owl-carousel loop">
-            @foreach($recoms as $recom)    
-                <div class="card-row" style="visibility: hidden">
-                    <a href="{{url('/recoms/' .$recom->id)}}" class="link{{substr($recom->id, -1, 1)}}">
-                        <div class="things-card">
-                            <div class="things-img">
-                                <img class="thingsImage img{{substr($recom->id, -1, 1)}}" src="" alt="">
-                            </div>
-                            <div class="things-detail address{{substr($recom->id, -1, 1)}}"></div>
-                            <div class="things-description title{{substr($recom->id, -1, 1)}}"" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"></div>
-                        </div>
-                    </a>
-                </div>
-            @endforeach    
             </div>
         </section>
         <section class="latest-news">
@@ -330,7 +315,7 @@
                 GUYS, CATCH UP WITH US !
             </h1>
             <div class="news">
-                @foreach ($news as $new)
+            @foreach ($news as $new)
                 <a href="{{url('/news/' .$new->id)}}" id="post-link-{{$new->id}}">
                     <input type="hidden" name="" id="post{{$new->id}}" value="{{$new->id}}">
                     <div class="news-item">
@@ -428,7 +413,7 @@
                         <a href="">
                             <i class="far fa-clock"></i>
                             </i>
-                            <p>Everyday: 9am to 11am / 3pm to 5pm / 5pm to 7pm</p>
+                            <p>9am to 11am / 3pm to 5pm / 5pm to 7pm</p>
                         </a>
                     </div>
                     <div class="contact-icon">
@@ -448,7 +433,6 @@
     <!-- Script Here -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
@@ -458,24 +442,8 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/myscript.js"></script>
-    <script type="text/javascript">    
-        function card(id)
-        {
-            $(".card-row").css("visibility","visible");
-          $.ajax({
-            type:'get',
-            url:'recoms/ajax/' + id,
-            success:function(response) {
-              console.log(response);
-                <?php for($i=0;$i<=9;$i++): ?>
-                $(".link<?php echo $i ?>").attr("href","http://danangfreewalkingtour.com/recoms/"+response[<?php echo $i ?>].id);    
-                $(".img<?php echo $i ?>").fadeOut().attr('src','assets/images/ThingsToDo/'+response[<?php echo $i ?>].img).fadeIn();
-                $(".title<?php echo $i ?>").fadeOut().html(response[<?php echo $i ?>].title).fadeIn();  
-                $(".address<?php echo $i ?>").fadeOut().html(response[<?php echo $i ?>].address).fadeIn();  
-                <?php endfor; ?>
-              }
-          });
-        }    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
         function post(id)
         {
             if (id == 'previous'){

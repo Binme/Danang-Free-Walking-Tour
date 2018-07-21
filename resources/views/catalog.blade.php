@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}">
     <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('icon/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/things/common.things.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/things/desktop.things.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/things/mobile.things.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/catalog/common.catalog.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/catalog/desktop.catalog.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/catalog/mobile.catalog.css') }}">
 </head>
 
 <body>
@@ -28,44 +28,44 @@
     <!-- header -->
     <header>
         <div class="toggle">
-                <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i>
         </div>
         <div class="head-img">
             <img src="{{ asset('assets/images/logo-changed.png') }}" alt="">
         </div>
         <div class="things-catalog">
-            <div class="things-but">
-                <a href="{{ url('/recoms/ajax/eat') }}">
+            <div class="things-but clicked">
+                <a href="{{ url('/recoms/ajax/eat') }}" class="clicked">
                     <i class="flaticon-kitchen"></i>
                     <p>Eat</p>
                 </a>
             </div>
             <div class="things-but">
-                <a href="{{ url('/recoms/ajax/drink') }}">
+                <a href="{{ url('/recoms/ajax/drink')}}">
                     <i class="flaticon-cocktail"></i>
                     <p>Drink</p>
                 </a>
             </div>
             <div class="things-but">
-                <a href="{{ url('/recoms/ajax/stay') }}">
+                <a href="{{ url('/recoms/ajax/stay')}}">
                     <i class="flaticon-bed"></i>
                     <p>Stay</p>
                 </a>
             </div>
             <div class="things-but">
-                <a href="{{ url('/recoms/ajax/relax') }}">
+                <a href="{{ url('/recoms/ajax/relax')}}">
                     <i class="flaticon-leaf"></i>
                     <p>Relax</p>
                 </a>
             </div>
             <div class="things-but">
-                <a href="{{ url('/recoms/ajax/entertainment') }}">
+                <a href="{{ url('/recoms/ajax/entertainment')}}">
                     <i class="flaticon-joker"></i>
                     <p>Entertain</p>
                 </a>
             </div>
             <div class="things-but">
-                <a href="{{ url('/recoms/ajax/buy') }}">
+                <a href="{{ url('/recoms/ajax/buy')}}">
                     <i class="flaticon-gift"></i>
                     <p>Gift</p>
                 </a>
@@ -74,70 +74,32 @@
     </header>
     <!-- MAIN -->
     <main>
-        <section class="cover">
-            <img src="{{ asset('assets/images/ThingsToDo/' .$recom_detail->img_2) }}" alt="">
-        </section>
-        <section class="info">
-            <div class="info-avt">
-                <div class="avt">
-                    <img class="square-img" class="avt-img" src="{{ asset('assets/images/ThingsToDo/' .$images[0]->img) }}" alt="">
-                </div>
-                <div class="info-rated">
-                    <div class="rated-num">
-                        
-                    </div>
-                    <div class="rated-text">
-                        Good Reviews
-                    </div>
-                </div>
-            </div>
-            <div class="info-text">
-                <div class="name-text">
-                    {{$recom_detail->title}}
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-arrow-circle-right"></i>
-                    <p>{{$recom_detail->about}}</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Address: {{$recom_detail->address}}</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-clock"></i>
-                    <p>{{$recom_detail->hour}}</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-tag"></i>
-                    <p> | {{$recom_detail->price}}</p>
-                </div>
-            </div>
-        </section>
-        <section class="maps">
-            <div class="maps-title">MAPS</div>
-            <iframe src="https://www.google.com/maps/embed?{{$recom_detail->map}}"
-                width="" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </section>
-        <section class="likes">
-            <div class="likes-title">
-                YOU MAY ALSO LIKE
-            </div>
-            <div class="likes-list">
-                @foreach($recom_detail_relatives as $recom_detail_relative)
-                <div class="like-item">
+        <section class="list">
+            @foreach($drinks as $drink)
+            <a href="{{url('/recoms/' .$drink->id)}}">
+                <div class="item">
                     <div class="img-item">
-                        <img src="../assets/images/ThingsToDo/{{$recom_detail_relative->img_1}}" class="oblong-img" alt="">
-                        <div class="pop-up">
-                            <a href="{{url('/recoms/' .$recom_detail_relative->recom_id)}}">
-                                <div class="click-here">
-                                {{$recom_detail_relative->title}}
-                                </div>
-                            </a>
+                        <img class="oblong-img" src="{{ asset('assets/images/ThingsToDo/' .$drink->img) }}" alt="">
+                    </div>
+                    <div class="text-item">
+                        <div class="name-item">
+                            {{$drink->title}}
+                        </div>
+                        <div class="detail-item">
+                           {{$drink->address}}
+                        </div>
+                        <div class="cost-item">
+                            <div class="space">|</div>
+                            <div class="vn">
+
+                                {{$drink->Recom_details->price}}
+                            </div>
                         </div>
                     </div>
                 </div>
-                @endforeach
-            </div>
+            </a>
+            @endforeach
+            
         </section>
         <section class="contact">
             <div class="img-logo">
@@ -188,7 +150,7 @@
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
     <script src="{{ asset('js/slick.min.js') }}"></script>
     <script src="{{ asset('js/wow.js') }}"></script>
-    <script src="{{ asset('js/things.script.js') }}"></script>
+    <script src="{{ asset('js/catalog.script.js') }}"></script>
 </body>
 
 </html>
