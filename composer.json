@@ -11,7 +11,8 @@
         "laravel/tinker": "^1.0",
         "srmklive/paypal": "~1.0",
         "guzzlehttp/guzzle": "~5.2",
-        "paypal/rest-api-sdk-php": "*"
+        "paypal/rest-api-sdk-php": "*",
+        "tymon/jwt-auth": "^1.0.0-rc.2"
     },
     "require-dev": {
         "filp/whoops": "^2.0",
